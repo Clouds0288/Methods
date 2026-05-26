@@ -1,0 +1,100 @@
+import pandas as pd
+import gurobipy as gp
+from gurobipy import GRB
+
+from network.case6 import (
+    OUT_DIR, S_base, V_min, V_max, hours,
+    buses, branches, branch_df, children, parent,
+    p_load_mw, q_load_mvar, p_dg_max, q_grid_max,
+)
+from opf.opf_report import write_sheets
+
+
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+grid_price = dict(zip(hours, [45] * 7 + [70] * 5 + [90] * 5 + [120] * 4 + [75] * 3))
+dg_cost = 85.0
+
+
+m = gp.Model("lindistflow_opf_6bus")
+m.Params.LogToConsole = 0
+m.Params.LogFile = str(OUT_DIR / "gurobi_lindistflow.log")
+
+P = m.addVars(branches, hours, lb=-GRB.INFINITY, name="P")  # 支路有功潮流，保留 MW，进入电压方程时再除以 S_base
+Q = m.addVars(branches, hours, lb=-GRB.INFINITY, name="Q")  # 支路无功潮流，保留 MVAr，进入电压方程时再除以 S_base
+v = m.addVars(buses, hours, lb=V_min**2, ub=V_max**2, name="v")
+p_grid = m.addVars(hours, lb=0, ub=6.0, name="p_grid")
+q_grid = m.addVars(hours, lb=0, ub=q_grid_max, name="q_grid")
+p_dg = m.addVars(hours, lb=0, ub=p_dg_max, name="p_dg")
+
+
+for h in hours:
+    m.addConstr(v[1, h] == 1.0, name=f"slack_v[{h}]")  # 平衡节点电压固定为 1.0 p.u. squared
+    m.addConstr(p_grid[h] == P["L12", h], name=f"grid_p[{h}]")  # 变电站有功注入等于首支路 L12 有功潮流
+    m.addConstr(q_grid[h] == Q["L12", h], name=f"grid_q[{h}]")  # 变电站无功注入等于首支路 L12 无功潮流
+
+    for br, f, t, r, x, smax in branch_df.itertuples(index=False, name=None):
+        p_pu, q_pu = P[br, h] / S_base, Q[br, h] / S_base  # LinDistFlow 忽略损耗，电压降只使用一阶 rP+xQ 项
+        m.addConstr(v[t, h] == v[f, h] - 2 * (r * p_pu + x * q_pu), name=f"voltage_drop[{br},{h}]")  # 线性电压降方程
+        m.addQConstr(P[br, h] * P[br, h] + Q[br, h] * Q[br, h] <= smax**2, name=f"branch_soc[{br},{h}]")  # 支路容量为 MVA，与 MW/MVAr 的 P/Q 匹配，无需再转 p.u.
+
+    for b in buses[1:]:
+        out_p = gp.quicksum(P[br, h] for br in children[b])  # 下游支路有功需求
+        out_q = gp.quicksum(Q[br, h] for br in children[b])  # 下游支路无功需求
+        p_gen = p_dg[h] if b == 6 else 0
+        m.addConstr(P[parent[b], h] == p_load_mw.loc[h, b] - p_gen + out_p, name=f"p_balance[{b},{h}]")  # 无损耗径向有功平衡
+        m.addConstr(Q[parent[b], h] == q_load_mvar.loc[h, b] + out_q, name=f"q_balance[{b},{h}]")  # 无损耗径向无功平衡
+
+
+m.setObjective(gp.quicksum(grid_price[h] * p_grid[h] + dg_cost * p_dg[h] for h in hours), GRB.MINIMIZE)
+m.update()
+m.write(str(OUT_DIR / "lindistflow_opf_6bus.lp"))
+m.optimize()
+
+if m.Status != GRB.OPTIMAL:
+    raise RuntimeError(f"LinDistFlow model status: {m.Status}")
+
+print("Model: lindistflow_opf_6bus")
+print(f"Objective: {m.ObjVal:.4f}")
+print(f"Variables: {m.NumVars}")
+print(f"Linear constraints: {m.NumConstrs}")
+print(f"Quadratic constraints: {m.NumQConstrs}")
+
+
+opf = pd.DataFrame(
+    {
+        "p_grid_mw": [p_grid[h].X for h in hours],
+        "p_dg_mw": [p_dg[h].X for h in hours],
+        "q_grid_mvar": [q_grid[h].X for h in hours],
+        "v_min_pu": [min(v[b, h].X**0.5 for b in buses) for h in hours],
+    },
+    index=list(hours),
+)
+opf.index.name = "hour"
+
+v_pu = pd.DataFrame({b: [v[b, h].X**0.5 for h in hours] for b in buses}, index=list(hours))
+v_pu.index.name = "hour"
+
+branch_flow = pd.DataFrame(
+    [   (h, br, f, t,
+         P[br, h].X, Q[br, h].X,
+         P[br, h].X / S_base, Q[br, h].X / S_base,
+         (P[br, h].X**2 + Q[br, h].X**2) ** 0.5, smax,)
+        for h in hours
+        for br, f, t, _, _, smax in branch_df.itertuples(index=False, name=None)
+    ],
+    columns=["hour", "branch", "from_bus", "to_bus", "p_mw", "q_mvar", "p_pu", "q_pu", "s_mva", "s_max_mva"],)
+branch_flow["loading_pct"] = 100 * branch_flow["s_mva"] / branch_flow["s_max_mva"]
+
+model_info = pd.DataFrame([("objective", m.ObjVal), ("variables", m.NumVars), ("linear_constraints", m.NumConstrs), ("quadratic_constraints", m.NumQConstrs)], columns=["metric", "value"],)
+
+write_sheets([
+    ("lin_model_info", model_info, False),
+    ("lin_dispatch", opf, True),
+    ("lin_voltage", v_pu, True),
+    ("lin_branch_flow", branch_flow, False),
+])
+
+print()
+print(opf.head().round(4))
+print(f"Minimum voltage: {v_pu.min().min():.4f} pu")
+print(f"Maximum branch loading: {branch_flow['loading_pct'].max():.2f}%")

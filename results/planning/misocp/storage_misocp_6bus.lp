@@ -1,0 +1,2293 @@
+\ Model storage_siting_misocp_6bus
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+\ Signature: 0x8d86ec28b50d8f1
+Minimize
+  45 p_grid[0] + 45 p_grid[1] + 45 p_grid[2] + 45 p_grid[3] + 45 p_grid[4]
+   + 45 p_grid[5] + 45 p_grid[6] + 70 p_grid[7] + 70 p_grid[8]
+   + 70 p_grid[9] + 70 p_grid[10] + 70 p_grid[11] + 90 p_grid[12]
+   + 90 p_grid[13] + 90 p_grid[14] + 90 p_grid[15] + 90 p_grid[16]
+   + 120 p_grid[17] + 120 p_grid[18] + 120 p_grid[19] + 120 p_grid[20]
+   + 75 p_grid[21] + 75 p_grid[22] + 75 p_grid[23] + 85 p_dg[0]
+   + 85 p_dg[1] + 85 p_dg[2] + 85 p_dg[3] + 85 p_dg[4] + 85 p_dg[5]
+   + 85 p_dg[6] + 85 p_dg[7] + 85 p_dg[8] + 85 p_dg[9] + 85 p_dg[10]
+   + 85 p_dg[11] + 85 p_dg[12] + 85 p_dg[13] + 85 p_dg[14] + 85 p_dg[15]
+   + 85 p_dg[16] + 85 p_dg[17] + 85 p_dg[18] + 85 p_dg[19] + 85 p_dg[20]
+   + 85 p_dg[21] + 85 p_dg[22] + 85 p_dg[23] + 15 y_storage[3]
+   + 15 y_storage[4] + 15 y_storage[5] + 15 y_storage[6] + 18 p_cap[3]
+   + 18 p_cap[4] + 18 p_cap[5] + 18 p_cap[6] + 12 e_cap[3] + 12 e_cap[4]
+   + 12 e_cap[5] + 12 e_cap[6] + p_ch[3,0] + p_ch[3,1] + p_ch[3,2]
+   + p_ch[3,3] + p_ch[3,4] + p_ch[3,5] + p_ch[3,6] + p_ch[3,7] + p_ch[3,8]
+   + p_ch[3,9] + p_ch[3,10] + p_ch[3,11] + p_ch[3,12] + p_ch[3,13]
+   + p_ch[3,14] + p_ch[3,15] + p_ch[3,16] + p_ch[3,17] + p_ch[3,18]
+   + p_ch[3,19] + p_ch[3,20] + p_ch[3,21] + p_ch[3,22] + p_ch[3,23]
+   + p_ch[4,0] + p_ch[4,1] + p_ch[4,2] + p_ch[4,3] + p_ch[4,4] + p_ch[4,5]
+   + p_ch[4,6] + p_ch[4,7] + p_ch[4,8] + p_ch[4,9] + p_ch[4,10]
+   + p_ch[4,11] + p_ch[4,12] + p_ch[4,13] + p_ch[4,14] + p_ch[4,15]
+   + p_ch[4,16] + p_ch[4,17] + p_ch[4,18] + p_ch[4,19] + p_ch[4,20]
+   + p_ch[4,21] + p_ch[4,22] + p_ch[4,23] + p_ch[5,0] + p_ch[5,1]
+   + p_ch[5,2] + p_ch[5,3] + p_ch[5,4] + p_ch[5,5] + p_ch[5,6] + p_ch[5,7]
+   + p_ch[5,8] + p_ch[5,9] + p_ch[5,10] + p_ch[5,11] + p_ch[5,12]
+   + p_ch[5,13] + p_ch[5,14] + p_ch[5,15] + p_ch[5,16] + p_ch[5,17]
+   + p_ch[5,18] + p_ch[5,19] + p_ch[5,20] + p_ch[5,21] + p_ch[5,22]
+   + p_ch[5,23] + p_ch[6,0] + p_ch[6,1] + p_ch[6,2] + p_ch[6,3] + p_ch[6,4]
+   + p_ch[6,5] + p_ch[6,6] + p_ch[6,7] + p_ch[6,8] + p_ch[6,9] + p_ch[6,10]
+   + p_ch[6,11] + p_ch[6,12] + p_ch[6,13] + p_ch[6,14] + p_ch[6,15]
+   + p_ch[6,16] + p_ch[6,17] + p_ch[6,18] + p_ch[6,19] + p_ch[6,20]
+   + p_ch[6,21] + p_ch[6,22] + p_ch[6,23] + p_dis[3,0] + p_dis[3,1]
+   + p_dis[3,2] + p_dis[3,3] + p_dis[3,4] + p_dis[3,5] + p_dis[3,6]
+   + p_dis[3,7] + p_dis[3,8] + p_dis[3,9] + p_dis[3,10] + p_dis[3,11]
+   + p_dis[3,12] + p_dis[3,13] + p_dis[3,14] + p_dis[3,15] + p_dis[3,16]
+   + p_dis[3,17] + p_dis[3,18] + p_dis[3,19] + p_dis[3,20] + p_dis[3,21]
+   + p_dis[3,22] + p_dis[3,23] + p_dis[4,0] + p_dis[4,1] + p_dis[4,2]
+   + p_dis[4,3] + p_dis[4,4] + p_dis[4,5] + p_dis[4,6] + p_dis[4,7]
+   + p_dis[4,8] + p_dis[4,9] + p_dis[4,10] + p_dis[4,11] + p_dis[4,12]
+   + p_dis[4,13] + p_dis[4,14] + p_dis[4,15] + p_dis[4,16] + p_dis[4,17]
+   + p_dis[4,18] + p_dis[4,19] + p_dis[4,20] + p_dis[4,21] + p_dis[4,22]
+   + p_dis[4,23] + p_dis[5,0] + p_dis[5,1] + p_dis[5,2] + p_dis[5,3]
+   + p_dis[5,4] + p_dis[5,5] + p_dis[5,6] + p_dis[5,7] + p_dis[5,8]
+   + p_dis[5,9] + p_dis[5,10] + p_dis[5,11] + p_dis[5,12] + p_dis[5,13]
+   + p_dis[5,14] + p_dis[5,15] + p_dis[5,16] + p_dis[5,17] + p_dis[5,18]
+   + p_dis[5,19] + p_dis[5,20] + p_dis[5,21] + p_dis[5,22] + p_dis[5,23]
+   + p_dis[6,0] + p_dis[6,1] + p_dis[6,2] + p_dis[6,3] + p_dis[6,4]
+   + p_dis[6,5] + p_dis[6,6] + p_dis[6,7] + p_dis[6,8] + p_dis[6,9]
+   + p_dis[6,10] + p_dis[6,11] + p_dis[6,12] + p_dis[6,13] + p_dis[6,14]
+   + p_dis[6,15] + p_dis[6,16] + p_dis[6,17] + p_dis[6,18] + p_dis[6,19]
+   + p_dis[6,20] + p_dis[6,21] + p_dis[6,22] + p_dis[6,23]
+Subject To
+ max_storage_sites: y_storage[3] + y_storage[4] + y_storage[5]
+   + y_storage[6] <= 1
+ p_cap_install[3]: - 0.8 y_storage[3] + p_cap[3] <= 0
+ e_cap_install[3]: - 2.4 y_storage[3] + e_cap[3] <= 0
+ initial_soc[3]: - 0.5 e_cap[3] + e_sto[3,0] = 0
+ charge_cap[3,0]: - p_cap[3] + p_ch[3,0] <= 0
+ discharge_cap[3,0]: - p_cap[3] + p_dis[3,0] <= 0
+ converter_cap[3,0]: - p_cap[3] + p_ch[3,0] + p_dis[3,0] <= 0
+ soc_min[3,0]: - 0.1 e_cap[3] + e_sto[3,0] >= 0
+ soc_max[3,0]: - e_cap[3] + e_sto[3,0] <= 0
+ soc_balance[3,0]: - 0.95 p_ch[3,0] + 1.052631578947368 p_dis[3,0]
+   - e_sto[3,0] + e_sto[3,1] = 0
+ charge_cap[3,1]: - p_cap[3] + p_ch[3,1] <= 0
+ discharge_cap[3,1]: - p_cap[3] + p_dis[3,1] <= 0
+ converter_cap[3,1]: - p_cap[3] + p_ch[3,1] + p_dis[3,1] <= 0
+ soc_min[3,1]: - 0.1 e_cap[3] + e_sto[3,1] >= 0
+ soc_max[3,1]: - e_cap[3] + e_sto[3,1] <= 0
+ soc_balance[3,1]: - 0.95 p_ch[3,1] + 1.052631578947368 p_dis[3,1]
+   - e_sto[3,1] + e_sto[3,2] = 0
+ charge_cap[3,2]: - p_cap[3] + p_ch[3,2] <= 0
+ discharge_cap[3,2]: - p_cap[3] + p_dis[3,2] <= 0
+ converter_cap[3,2]: - p_cap[3] + p_ch[3,2] + p_dis[3,2] <= 0
+ soc_min[3,2]: - 0.1 e_cap[3] + e_sto[3,2] >= 0
+ soc_max[3,2]: - e_cap[3] + e_sto[3,2] <= 0
+ soc_balance[3,2]: - 0.95 p_ch[3,2] + 1.052631578947368 p_dis[3,2]
+   - e_sto[3,2] + e_sto[3,3] = 0
+ charge_cap[3,3]: - p_cap[3] + p_ch[3,3] <= 0
+ discharge_cap[3,3]: - p_cap[3] + p_dis[3,3] <= 0
+ converter_cap[3,3]: - p_cap[3] + p_ch[3,3] + p_dis[3,3] <= 0
+ soc_min[3,3]: - 0.1 e_cap[3] + e_sto[3,3] >= 0
+ soc_max[3,3]: - e_cap[3] + e_sto[3,3] <= 0
+ soc_balance[3,3]: - 0.95 p_ch[3,3] + 1.052631578947368 p_dis[3,3]
+   - e_sto[3,3] + e_sto[3,4] = 0
+ charge_cap[3,4]: - p_cap[3] + p_ch[3,4] <= 0
+ discharge_cap[3,4]: - p_cap[3] + p_dis[3,4] <= 0
+ converter_cap[3,4]: - p_cap[3] + p_ch[3,4] + p_dis[3,4] <= 0
+ soc_min[3,4]: - 0.1 e_cap[3] + e_sto[3,4] >= 0
+ soc_max[3,4]: - e_cap[3] + e_sto[3,4] <= 0
+ soc_balance[3,4]: - 0.95 p_ch[3,4] + 1.052631578947368 p_dis[3,4]
+   - e_sto[3,4] + e_sto[3,5] = 0
+ charge_cap[3,5]: - p_cap[3] + p_ch[3,5] <= 0
+ discharge_cap[3,5]: - p_cap[3] + p_dis[3,5] <= 0
+ converter_cap[3,5]: - p_cap[3] + p_ch[3,5] + p_dis[3,5] <= 0
+ soc_min[3,5]: - 0.1 e_cap[3] + e_sto[3,5] >= 0
+ soc_max[3,5]: - e_cap[3] + e_sto[3,5] <= 0
+ soc_balance[3,5]: - 0.95 p_ch[3,5] + 1.052631578947368 p_dis[3,5]
+   - e_sto[3,5] + e_sto[3,6] = 0
+ charge_cap[3,6]: - p_cap[3] + p_ch[3,6] <= 0
+ discharge_cap[3,6]: - p_cap[3] + p_dis[3,6] <= 0
+ converter_cap[3,6]: - p_cap[3] + p_ch[3,6] + p_dis[3,6] <= 0
+ soc_min[3,6]: - 0.1 e_cap[3] + e_sto[3,6] >= 0
+ soc_max[3,6]: - e_cap[3] + e_sto[3,6] <= 0
+ soc_balance[3,6]: - 0.95 p_ch[3,6] + 1.052631578947368 p_dis[3,6]
+   - e_sto[3,6] + e_sto[3,7] = 0
+ charge_cap[3,7]: - p_cap[3] + p_ch[3,7] <= 0
+ discharge_cap[3,7]: - p_cap[3] + p_dis[3,7] <= 0
+ converter_cap[3,7]: - p_cap[3] + p_ch[3,7] + p_dis[3,7] <= 0
+ soc_min[3,7]: - 0.1 e_cap[3] + e_sto[3,7] >= 0
+ soc_max[3,7]: - e_cap[3] + e_sto[3,7] <= 0
+ soc_balance[3,7]: - 0.95 p_ch[3,7] + 1.052631578947368 p_dis[3,7]
+   - e_sto[3,7] + e_sto[3,8] = 0
+ charge_cap[3,8]: - p_cap[3] + p_ch[3,8] <= 0
+ discharge_cap[3,8]: - p_cap[3] + p_dis[3,8] <= 0
+ converter_cap[3,8]: - p_cap[3] + p_ch[3,8] + p_dis[3,8] <= 0
+ soc_min[3,8]: - 0.1 e_cap[3] + e_sto[3,8] >= 0
+ soc_max[3,8]: - e_cap[3] + e_sto[3,8] <= 0
+ soc_balance[3,8]: - 0.95 p_ch[3,8] + 1.052631578947368 p_dis[3,8]
+   - e_sto[3,8] + e_sto[3,9] = 0
+ charge_cap[3,9]: - p_cap[3] + p_ch[3,9] <= 0
+ discharge_cap[3,9]: - p_cap[3] + p_dis[3,9] <= 0
+ converter_cap[3,9]: - p_cap[3] + p_ch[3,9] + p_dis[3,9] <= 0
+ soc_min[3,9]: - 0.1 e_cap[3] + e_sto[3,9] >= 0
+ soc_max[3,9]: - e_cap[3] + e_sto[3,9] <= 0
+ soc_balance[3,9]: - 0.95 p_ch[3,9] + 1.052631578947368 p_dis[3,9]
+   - e_sto[3,9] + e_sto[3,10] = 0
+ charge_cap[3,10]: - p_cap[3] + p_ch[3,10] <= 0
+ discharge_cap[3,10]: - p_cap[3] + p_dis[3,10] <= 0
+ converter_cap[3,10]: - p_cap[3] + p_ch[3,10] + p_dis[3,10] <= 0
+ soc_min[3,10]: - 0.1 e_cap[3] + e_sto[3,10] >= 0
+ soc_max[3,10]: - e_cap[3] + e_sto[3,10] <= 0
+ soc_balance[3,10]: - 0.95 p_ch[3,10] + 1.052631578947368 p_dis[3,10]
+   - e_sto[3,10] + e_sto[3,11] = 0
+ charge_cap[3,11]: - p_cap[3] + p_ch[3,11] <= 0
+ discharge_cap[3,11]: - p_cap[3] + p_dis[3,11] <= 0
+ converter_cap[3,11]: - p_cap[3] + p_ch[3,11] + p_dis[3,11] <= 0
+ soc_min[3,11]: - 0.1 e_cap[3] + e_sto[3,11] >= 0
+ soc_max[3,11]: - e_cap[3] + e_sto[3,11] <= 0
+ soc_balance[3,11]: - 0.95 p_ch[3,11] + 1.052631578947368 p_dis[3,11]
+   - e_sto[3,11] + e_sto[3,12] = 0
+ charge_cap[3,12]: - p_cap[3] + p_ch[3,12] <= 0
+ discharge_cap[3,12]: - p_cap[3] + p_dis[3,12] <= 0
+ converter_cap[3,12]: - p_cap[3] + p_ch[3,12] + p_dis[3,12] <= 0
+ soc_min[3,12]: - 0.1 e_cap[3] + e_sto[3,12] >= 0
+ soc_max[3,12]: - e_cap[3] + e_sto[3,12] <= 0
+ soc_balance[3,12]: - 0.95 p_ch[3,12] + 1.052631578947368 p_dis[3,12]
+   - e_sto[3,12] + e_sto[3,13] = 0
+ charge_cap[3,13]: - p_cap[3] + p_ch[3,13] <= 0
+ discharge_cap[3,13]: - p_cap[3] + p_dis[3,13] <= 0
+ converter_cap[3,13]: - p_cap[3] + p_ch[3,13] + p_dis[3,13] <= 0
+ soc_min[3,13]: - 0.1 e_cap[3] + e_sto[3,13] >= 0
+ soc_max[3,13]: - e_cap[3] + e_sto[3,13] <= 0
+ soc_balance[3,13]: - 0.95 p_ch[3,13] + 1.052631578947368 p_dis[3,13]
+   - e_sto[3,13] + e_sto[3,14] = 0
+ charge_cap[3,14]: - p_cap[3] + p_ch[3,14] <= 0
+ discharge_cap[3,14]: - p_cap[3] + p_dis[3,14] <= 0
+ converter_cap[3,14]: - p_cap[3] + p_ch[3,14] + p_dis[3,14] <= 0
+ soc_min[3,14]: - 0.1 e_cap[3] + e_sto[3,14] >= 0
+ soc_max[3,14]: - e_cap[3] + e_sto[3,14] <= 0
+ soc_balance[3,14]: - 0.95 p_ch[3,14] + 1.052631578947368 p_dis[3,14]
+   - e_sto[3,14] + e_sto[3,15] = 0
+ charge_cap[3,15]: - p_cap[3] + p_ch[3,15] <= 0
+ discharge_cap[3,15]: - p_cap[3] + p_dis[3,15] <= 0
+ converter_cap[3,15]: - p_cap[3] + p_ch[3,15] + p_dis[3,15] <= 0
+ soc_min[3,15]: - 0.1 e_cap[3] + e_sto[3,15] >= 0
+ soc_max[3,15]: - e_cap[3] + e_sto[3,15] <= 0
+ soc_balance[3,15]: - 0.95 p_ch[3,15] + 1.052631578947368 p_dis[3,15]
+   - e_sto[3,15] + e_sto[3,16] = 0
+ charge_cap[3,16]: - p_cap[3] + p_ch[3,16] <= 0
+ discharge_cap[3,16]: - p_cap[3] + p_dis[3,16] <= 0
+ converter_cap[3,16]: - p_cap[3] + p_ch[3,16] + p_dis[3,16] <= 0
+ soc_min[3,16]: - 0.1 e_cap[3] + e_sto[3,16] >= 0
+ soc_max[3,16]: - e_cap[3] + e_sto[3,16] <= 0
+ soc_balance[3,16]: - 0.95 p_ch[3,16] + 1.052631578947368 p_dis[3,16]
+   - e_sto[3,16] + e_sto[3,17] = 0
+ charge_cap[3,17]: - p_cap[3] + p_ch[3,17] <= 0
+ discharge_cap[3,17]: - p_cap[3] + p_dis[3,17] <= 0
+ converter_cap[3,17]: - p_cap[3] + p_ch[3,17] + p_dis[3,17] <= 0
+ soc_min[3,17]: - 0.1 e_cap[3] + e_sto[3,17] >= 0
+ soc_max[3,17]: - e_cap[3] + e_sto[3,17] <= 0
+ soc_balance[3,17]: - 0.95 p_ch[3,17] + 1.052631578947368 p_dis[3,17]
+   - e_sto[3,17] + e_sto[3,18] = 0
+ charge_cap[3,18]: - p_cap[3] + p_ch[3,18] <= 0
+ discharge_cap[3,18]: - p_cap[3] + p_dis[3,18] <= 0
+ converter_cap[3,18]: - p_cap[3] + p_ch[3,18] + p_dis[3,18] <= 0
+ soc_min[3,18]: - 0.1 e_cap[3] + e_sto[3,18] >= 0
+ soc_max[3,18]: - e_cap[3] + e_sto[3,18] <= 0
+ soc_balance[3,18]: - 0.95 p_ch[3,18] + 1.052631578947368 p_dis[3,18]
+   - e_sto[3,18] + e_sto[3,19] = 0
+ charge_cap[3,19]: - p_cap[3] + p_ch[3,19] <= 0
+ discharge_cap[3,19]: - p_cap[3] + p_dis[3,19] <= 0
+ converter_cap[3,19]: - p_cap[3] + p_ch[3,19] + p_dis[3,19] <= 0
+ soc_min[3,19]: - 0.1 e_cap[3] + e_sto[3,19] >= 0
+ soc_max[3,19]: - e_cap[3] + e_sto[3,19] <= 0
+ soc_balance[3,19]: - 0.95 p_ch[3,19] + 1.052631578947368 p_dis[3,19]
+   - e_sto[3,19] + e_sto[3,20] = 0
+ charge_cap[3,20]: - p_cap[3] + p_ch[3,20] <= 0
+ discharge_cap[3,20]: - p_cap[3] + p_dis[3,20] <= 0
+ converter_cap[3,20]: - p_cap[3] + p_ch[3,20] + p_dis[3,20] <= 0
+ soc_min[3,20]: - 0.1 e_cap[3] + e_sto[3,20] >= 0
+ soc_max[3,20]: - e_cap[3] + e_sto[3,20] <= 0
+ soc_balance[3,20]: - 0.95 p_ch[3,20] + 1.052631578947368 p_dis[3,20]
+   - e_sto[3,20] + e_sto[3,21] = 0
+ charge_cap[3,21]: - p_cap[3] + p_ch[3,21] <= 0
+ discharge_cap[3,21]: - p_cap[3] + p_dis[3,21] <= 0
+ converter_cap[3,21]: - p_cap[3] + p_ch[3,21] + p_dis[3,21] <= 0
+ soc_min[3,21]: - 0.1 e_cap[3] + e_sto[3,21] >= 0
+ soc_max[3,21]: - e_cap[3] + e_sto[3,21] <= 0
+ soc_balance[3,21]: - 0.95 p_ch[3,21] + 1.052631578947368 p_dis[3,21]
+   - e_sto[3,21] + e_sto[3,22] = 0
+ charge_cap[3,22]: - p_cap[3] + p_ch[3,22] <= 0
+ discharge_cap[3,22]: - p_cap[3] + p_dis[3,22] <= 0
+ converter_cap[3,22]: - p_cap[3] + p_ch[3,22] + p_dis[3,22] <= 0
+ soc_min[3,22]: - 0.1 e_cap[3] + e_sto[3,22] >= 0
+ soc_max[3,22]: - e_cap[3] + e_sto[3,22] <= 0
+ soc_balance[3,22]: - 0.95 p_ch[3,22] + 1.052631578947368 p_dis[3,22]
+   - e_sto[3,22] + e_sto[3,23] = 0
+ charge_cap[3,23]: - p_cap[3] + p_ch[3,23] <= 0
+ discharge_cap[3,23]: - p_cap[3] + p_dis[3,23] <= 0
+ converter_cap[3,23]: - p_cap[3] + p_ch[3,23] + p_dis[3,23] <= 0
+ soc_min[3,23]: - 0.1 e_cap[3] + e_sto[3,23] >= 0
+ soc_max[3,23]: - e_cap[3] + e_sto[3,23] <= 0
+ soc_balance[3,23]: - 0.95 p_ch[3,23] + 1.052631578947368 p_dis[3,23]
+   + e_sto[3,0] - e_sto[3,23] = 0
+ p_cap_install[4]: - 0.8 y_storage[4] + p_cap[4] <= 0
+ e_cap_install[4]: - 2.4 y_storage[4] + e_cap[4] <= 0
+ initial_soc[4]: - 0.5 e_cap[4] + e_sto[4,0] = 0
+ charge_cap[4,0]: - p_cap[4] + p_ch[4,0] <= 0
+ discharge_cap[4,0]: - p_cap[4] + p_dis[4,0] <= 0
+ converter_cap[4,0]: - p_cap[4] + p_ch[4,0] + p_dis[4,0] <= 0
+ soc_min[4,0]: - 0.1 e_cap[4] + e_sto[4,0] >= 0
+ soc_max[4,0]: - e_cap[4] + e_sto[4,0] <= 0
+ soc_balance[4,0]: - 0.95 p_ch[4,0] + 1.052631578947368 p_dis[4,0]
+   - e_sto[4,0] + e_sto[4,1] = 0
+ charge_cap[4,1]: - p_cap[4] + p_ch[4,1] <= 0
+ discharge_cap[4,1]: - p_cap[4] + p_dis[4,1] <= 0
+ converter_cap[4,1]: - p_cap[4] + p_ch[4,1] + p_dis[4,1] <= 0
+ soc_min[4,1]: - 0.1 e_cap[4] + e_sto[4,1] >= 0
+ soc_max[4,1]: - e_cap[4] + e_sto[4,1] <= 0
+ soc_balance[4,1]: - 0.95 p_ch[4,1] + 1.052631578947368 p_dis[4,1]
+   - e_sto[4,1] + e_sto[4,2] = 0
+ charge_cap[4,2]: - p_cap[4] + p_ch[4,2] <= 0
+ discharge_cap[4,2]: - p_cap[4] + p_dis[4,2] <= 0
+ converter_cap[4,2]: - p_cap[4] + p_ch[4,2] + p_dis[4,2] <= 0
+ soc_min[4,2]: - 0.1 e_cap[4] + e_sto[4,2] >= 0
+ soc_max[4,2]: - e_cap[4] + e_sto[4,2] <= 0
+ soc_balance[4,2]: - 0.95 p_ch[4,2] + 1.052631578947368 p_dis[4,2]
+   - e_sto[4,2] + e_sto[4,3] = 0
+ charge_cap[4,3]: - p_cap[4] + p_ch[4,3] <= 0
+ discharge_cap[4,3]: - p_cap[4] + p_dis[4,3] <= 0
+ converter_cap[4,3]: - p_cap[4] + p_ch[4,3] + p_dis[4,3] <= 0
+ soc_min[4,3]: - 0.1 e_cap[4] + e_sto[4,3] >= 0
+ soc_max[4,3]: - e_cap[4] + e_sto[4,3] <= 0
+ soc_balance[4,3]: - 0.95 p_ch[4,3] + 1.052631578947368 p_dis[4,3]
+   - e_sto[4,3] + e_sto[4,4] = 0
+ charge_cap[4,4]: - p_cap[4] + p_ch[4,4] <= 0
+ discharge_cap[4,4]: - p_cap[4] + p_dis[4,4] <= 0
+ converter_cap[4,4]: - p_cap[4] + p_ch[4,4] + p_dis[4,4] <= 0
+ soc_min[4,4]: - 0.1 e_cap[4] + e_sto[4,4] >= 0
+ soc_max[4,4]: - e_cap[4] + e_sto[4,4] <= 0
+ soc_balance[4,4]: - 0.95 p_ch[4,4] + 1.052631578947368 p_dis[4,4]
+   - e_sto[4,4] + e_sto[4,5] = 0
+ charge_cap[4,5]: - p_cap[4] + p_ch[4,5] <= 0
+ discharge_cap[4,5]: - p_cap[4] + p_dis[4,5] <= 0
+ converter_cap[4,5]: - p_cap[4] + p_ch[4,5] + p_dis[4,5] <= 0
+ soc_min[4,5]: - 0.1 e_cap[4] + e_sto[4,5] >= 0
+ soc_max[4,5]: - e_cap[4] + e_sto[4,5] <= 0
+ soc_balance[4,5]: - 0.95 p_ch[4,5] + 1.052631578947368 p_dis[4,5]
+   - e_sto[4,5] + e_sto[4,6] = 0
+ charge_cap[4,6]: - p_cap[4] + p_ch[4,6] <= 0
+ discharge_cap[4,6]: - p_cap[4] + p_dis[4,6] <= 0
+ converter_cap[4,6]: - p_cap[4] + p_ch[4,6] + p_dis[4,6] <= 0
+ soc_min[4,6]: - 0.1 e_cap[4] + e_sto[4,6] >= 0
+ soc_max[4,6]: - e_cap[4] + e_sto[4,6] <= 0
+ soc_balance[4,6]: - 0.95 p_ch[4,6] + 1.052631578947368 p_dis[4,6]
+   - e_sto[4,6] + e_sto[4,7] = 0
+ charge_cap[4,7]: - p_cap[4] + p_ch[4,7] <= 0
+ discharge_cap[4,7]: - p_cap[4] + p_dis[4,7] <= 0
+ converter_cap[4,7]: - p_cap[4] + p_ch[4,7] + p_dis[4,7] <= 0
+ soc_min[4,7]: - 0.1 e_cap[4] + e_sto[4,7] >= 0
+ soc_max[4,7]: - e_cap[4] + e_sto[4,7] <= 0
+ soc_balance[4,7]: - 0.95 p_ch[4,7] + 1.052631578947368 p_dis[4,7]
+   - e_sto[4,7] + e_sto[4,8] = 0
+ charge_cap[4,8]: - p_cap[4] + p_ch[4,8] <= 0
+ discharge_cap[4,8]: - p_cap[4] + p_dis[4,8] <= 0
+ converter_cap[4,8]: - p_cap[4] + p_ch[4,8] + p_dis[4,8] <= 0
+ soc_min[4,8]: - 0.1 e_cap[4] + e_sto[4,8] >= 0
+ soc_max[4,8]: - e_cap[4] + e_sto[4,8] <= 0
+ soc_balance[4,8]: - 0.95 p_ch[4,8] + 1.052631578947368 p_dis[4,8]
+   - e_sto[4,8] + e_sto[4,9] = 0
+ charge_cap[4,9]: - p_cap[4] + p_ch[4,9] <= 0
+ discharge_cap[4,9]: - p_cap[4] + p_dis[4,9] <= 0
+ converter_cap[4,9]: - p_cap[4] + p_ch[4,9] + p_dis[4,9] <= 0
+ soc_min[4,9]: - 0.1 e_cap[4] + e_sto[4,9] >= 0
+ soc_max[4,9]: - e_cap[4] + e_sto[4,9] <= 0
+ soc_balance[4,9]: - 0.95 p_ch[4,9] + 1.052631578947368 p_dis[4,9]
+   - e_sto[4,9] + e_sto[4,10] = 0
+ charge_cap[4,10]: - p_cap[4] + p_ch[4,10] <= 0
+ discharge_cap[4,10]: - p_cap[4] + p_dis[4,10] <= 0
+ converter_cap[4,10]: - p_cap[4] + p_ch[4,10] + p_dis[4,10] <= 0
+ soc_min[4,10]: - 0.1 e_cap[4] + e_sto[4,10] >= 0
+ soc_max[4,10]: - e_cap[4] + e_sto[4,10] <= 0
+ soc_balance[4,10]: - 0.95 p_ch[4,10] + 1.052631578947368 p_dis[4,10]
+   - e_sto[4,10] + e_sto[4,11] = 0
+ charge_cap[4,11]: - p_cap[4] + p_ch[4,11] <= 0
+ discharge_cap[4,11]: - p_cap[4] + p_dis[4,11] <= 0
+ converter_cap[4,11]: - p_cap[4] + p_ch[4,11] + p_dis[4,11] <= 0
+ soc_min[4,11]: - 0.1 e_cap[4] + e_sto[4,11] >= 0
+ soc_max[4,11]: - e_cap[4] + e_sto[4,11] <= 0
+ soc_balance[4,11]: - 0.95 p_ch[4,11] + 1.052631578947368 p_dis[4,11]
+   - e_sto[4,11] + e_sto[4,12] = 0
+ charge_cap[4,12]: - p_cap[4] + p_ch[4,12] <= 0
+ discharge_cap[4,12]: - p_cap[4] + p_dis[4,12] <= 0
+ converter_cap[4,12]: - p_cap[4] + p_ch[4,12] + p_dis[4,12] <= 0
+ soc_min[4,12]: - 0.1 e_cap[4] + e_sto[4,12] >= 0
+ soc_max[4,12]: - e_cap[4] + e_sto[4,12] <= 0
+ soc_balance[4,12]: - 0.95 p_ch[4,12] + 1.052631578947368 p_dis[4,12]
+   - e_sto[4,12] + e_sto[4,13] = 0
+ charge_cap[4,13]: - p_cap[4] + p_ch[4,13] <= 0
+ discharge_cap[4,13]: - p_cap[4] + p_dis[4,13] <= 0
+ converter_cap[4,13]: - p_cap[4] + p_ch[4,13] + p_dis[4,13] <= 0
+ soc_min[4,13]: - 0.1 e_cap[4] + e_sto[4,13] >= 0
+ soc_max[4,13]: - e_cap[4] + e_sto[4,13] <= 0
+ soc_balance[4,13]: - 0.95 p_ch[4,13] + 1.052631578947368 p_dis[4,13]
+   - e_sto[4,13] + e_sto[4,14] = 0
+ charge_cap[4,14]: - p_cap[4] + p_ch[4,14] <= 0
+ discharge_cap[4,14]: - p_cap[4] + p_dis[4,14] <= 0
+ converter_cap[4,14]: - p_cap[4] + p_ch[4,14] + p_dis[4,14] <= 0
+ soc_min[4,14]: - 0.1 e_cap[4] + e_sto[4,14] >= 0
+ soc_max[4,14]: - e_cap[4] + e_sto[4,14] <= 0
+ soc_balance[4,14]: - 0.95 p_ch[4,14] + 1.052631578947368 p_dis[4,14]
+   - e_sto[4,14] + e_sto[4,15] = 0
+ charge_cap[4,15]: - p_cap[4] + p_ch[4,15] <= 0
+ discharge_cap[4,15]: - p_cap[4] + p_dis[4,15] <= 0
+ converter_cap[4,15]: - p_cap[4] + p_ch[4,15] + p_dis[4,15] <= 0
+ soc_min[4,15]: - 0.1 e_cap[4] + e_sto[4,15] >= 0
+ soc_max[4,15]: - e_cap[4] + e_sto[4,15] <= 0
+ soc_balance[4,15]: - 0.95 p_ch[4,15] + 1.052631578947368 p_dis[4,15]
+   - e_sto[4,15] + e_sto[4,16] = 0
+ charge_cap[4,16]: - p_cap[4] + p_ch[4,16] <= 0
+ discharge_cap[4,16]: - p_cap[4] + p_dis[4,16] <= 0
+ converter_cap[4,16]: - p_cap[4] + p_ch[4,16] + p_dis[4,16] <= 0
+ soc_min[4,16]: - 0.1 e_cap[4] + e_sto[4,16] >= 0
+ soc_max[4,16]: - e_cap[4] + e_sto[4,16] <= 0
+ soc_balance[4,16]: - 0.95 p_ch[4,16] + 1.052631578947368 p_dis[4,16]
+   - e_sto[4,16] + e_sto[4,17] = 0
+ charge_cap[4,17]: - p_cap[4] + p_ch[4,17] <= 0
+ discharge_cap[4,17]: - p_cap[4] + p_dis[4,17] <= 0
+ converter_cap[4,17]: - p_cap[4] + p_ch[4,17] + p_dis[4,17] <= 0
+ soc_min[4,17]: - 0.1 e_cap[4] + e_sto[4,17] >= 0
+ soc_max[4,17]: - e_cap[4] + e_sto[4,17] <= 0
+ soc_balance[4,17]: - 0.95 p_ch[4,17] + 1.052631578947368 p_dis[4,17]
+   - e_sto[4,17] + e_sto[4,18] = 0
+ charge_cap[4,18]: - p_cap[4] + p_ch[4,18] <= 0
+ discharge_cap[4,18]: - p_cap[4] + p_dis[4,18] <= 0
+ converter_cap[4,18]: - p_cap[4] + p_ch[4,18] + p_dis[4,18] <= 0
+ soc_min[4,18]: - 0.1 e_cap[4] + e_sto[4,18] >= 0
+ soc_max[4,18]: - e_cap[4] + e_sto[4,18] <= 0
+ soc_balance[4,18]: - 0.95 p_ch[4,18] + 1.052631578947368 p_dis[4,18]
+   - e_sto[4,18] + e_sto[4,19] = 0
+ charge_cap[4,19]: - p_cap[4] + p_ch[4,19] <= 0
+ discharge_cap[4,19]: - p_cap[4] + p_dis[4,19] <= 0
+ converter_cap[4,19]: - p_cap[4] + p_ch[4,19] + p_dis[4,19] <= 0
+ soc_min[4,19]: - 0.1 e_cap[4] + e_sto[4,19] >= 0
+ soc_max[4,19]: - e_cap[4] + e_sto[4,19] <= 0
+ soc_balance[4,19]: - 0.95 p_ch[4,19] + 1.052631578947368 p_dis[4,19]
+   - e_sto[4,19] + e_sto[4,20] = 0
+ charge_cap[4,20]: - p_cap[4] + p_ch[4,20] <= 0
+ discharge_cap[4,20]: - p_cap[4] + p_dis[4,20] <= 0
+ converter_cap[4,20]: - p_cap[4] + p_ch[4,20] + p_dis[4,20] <= 0
+ soc_min[4,20]: - 0.1 e_cap[4] + e_sto[4,20] >= 0
+ soc_max[4,20]: - e_cap[4] + e_sto[4,20] <= 0
+ soc_balance[4,20]: - 0.95 p_ch[4,20] + 1.052631578947368 p_dis[4,20]
+   - e_sto[4,20] + e_sto[4,21] = 0
+ charge_cap[4,21]: - p_cap[4] + p_ch[4,21] <= 0
+ discharge_cap[4,21]: - p_cap[4] + p_dis[4,21] <= 0
+ converter_cap[4,21]: - p_cap[4] + p_ch[4,21] + p_dis[4,21] <= 0
+ soc_min[4,21]: - 0.1 e_cap[4] + e_sto[4,21] >= 0
+ soc_max[4,21]: - e_cap[4] + e_sto[4,21] <= 0
+ soc_balance[4,21]: - 0.95 p_ch[4,21] + 1.052631578947368 p_dis[4,21]
+   - e_sto[4,21] + e_sto[4,22] = 0
+ charge_cap[4,22]: - p_cap[4] + p_ch[4,22] <= 0
+ discharge_cap[4,22]: - p_cap[4] + p_dis[4,22] <= 0
+ converter_cap[4,22]: - p_cap[4] + p_ch[4,22] + p_dis[4,22] <= 0
+ soc_min[4,22]: - 0.1 e_cap[4] + e_sto[4,22] >= 0
+ soc_max[4,22]: - e_cap[4] + e_sto[4,22] <= 0
+ soc_balance[4,22]: - 0.95 p_ch[4,22] + 1.052631578947368 p_dis[4,22]
+   - e_sto[4,22] + e_sto[4,23] = 0
+ charge_cap[4,23]: - p_cap[4] + p_ch[4,23] <= 0
+ discharge_cap[4,23]: - p_cap[4] + p_dis[4,23] <= 0
+ converter_cap[4,23]: - p_cap[4] + p_ch[4,23] + p_dis[4,23] <= 0
+ soc_min[4,23]: - 0.1 e_cap[4] + e_sto[4,23] >= 0
+ soc_max[4,23]: - e_cap[4] + e_sto[4,23] <= 0
+ soc_balance[4,23]: - 0.95 p_ch[4,23] + 1.052631578947368 p_dis[4,23]
+   + e_sto[4,0] - e_sto[4,23] = 0
+ p_cap_install[5]: - 0.8 y_storage[5] + p_cap[5] <= 0
+ e_cap_install[5]: - 2.4 y_storage[5] + e_cap[5] <= 0
+ initial_soc[5]: - 0.5 e_cap[5] + e_sto[5,0] = 0
+ charge_cap[5,0]: - p_cap[5] + p_ch[5,0] <= 0
+ discharge_cap[5,0]: - p_cap[5] + p_dis[5,0] <= 0
+ converter_cap[5,0]: - p_cap[5] + p_ch[5,0] + p_dis[5,0] <= 0
+ soc_min[5,0]: - 0.1 e_cap[5] + e_sto[5,0] >= 0
+ soc_max[5,0]: - e_cap[5] + e_sto[5,0] <= 0
+ soc_balance[5,0]: - 0.95 p_ch[5,0] + 1.052631578947368 p_dis[5,0]
+   - e_sto[5,0] + e_sto[5,1] = 0
+ charge_cap[5,1]: - p_cap[5] + p_ch[5,1] <= 0
+ discharge_cap[5,1]: - p_cap[5] + p_dis[5,1] <= 0
+ converter_cap[5,1]: - p_cap[5] + p_ch[5,1] + p_dis[5,1] <= 0
+ soc_min[5,1]: - 0.1 e_cap[5] + e_sto[5,1] >= 0
+ soc_max[5,1]: - e_cap[5] + e_sto[5,1] <= 0
+ soc_balance[5,1]: - 0.95 p_ch[5,1] + 1.052631578947368 p_dis[5,1]
+   - e_sto[5,1] + e_sto[5,2] = 0
+ charge_cap[5,2]: - p_cap[5] + p_ch[5,2] <= 0
+ discharge_cap[5,2]: - p_cap[5] + p_dis[5,2] <= 0
+ converter_cap[5,2]: - p_cap[5] + p_ch[5,2] + p_dis[5,2] <= 0
+ soc_min[5,2]: - 0.1 e_cap[5] + e_sto[5,2] >= 0
+ soc_max[5,2]: - e_cap[5] + e_sto[5,2] <= 0
+ soc_balance[5,2]: - 0.95 p_ch[5,2] + 1.052631578947368 p_dis[5,2]
+   - e_sto[5,2] + e_sto[5,3] = 0
+ charge_cap[5,3]: - p_cap[5] + p_ch[5,3] <= 0
+ discharge_cap[5,3]: - p_cap[5] + p_dis[5,3] <= 0
+ converter_cap[5,3]: - p_cap[5] + p_ch[5,3] + p_dis[5,3] <= 0
+ soc_min[5,3]: - 0.1 e_cap[5] + e_sto[5,3] >= 0
+ soc_max[5,3]: - e_cap[5] + e_sto[5,3] <= 0
+ soc_balance[5,3]: - 0.95 p_ch[5,3] + 1.052631578947368 p_dis[5,3]
+   - e_sto[5,3] + e_sto[5,4] = 0
+ charge_cap[5,4]: - p_cap[5] + p_ch[5,4] <= 0
+ discharge_cap[5,4]: - p_cap[5] + p_dis[5,4] <= 0
+ converter_cap[5,4]: - p_cap[5] + p_ch[5,4] + p_dis[5,4] <= 0
+ soc_min[5,4]: - 0.1 e_cap[5] + e_sto[5,4] >= 0
+ soc_max[5,4]: - e_cap[5] + e_sto[5,4] <= 0
+ soc_balance[5,4]: - 0.95 p_ch[5,4] + 1.052631578947368 p_dis[5,4]
+   - e_sto[5,4] + e_sto[5,5] = 0
+ charge_cap[5,5]: - p_cap[5] + p_ch[5,5] <= 0
+ discharge_cap[5,5]: - p_cap[5] + p_dis[5,5] <= 0
+ converter_cap[5,5]: - p_cap[5] + p_ch[5,5] + p_dis[5,5] <= 0
+ soc_min[5,5]: - 0.1 e_cap[5] + e_sto[5,5] >= 0
+ soc_max[5,5]: - e_cap[5] + e_sto[5,5] <= 0
+ soc_balance[5,5]: - 0.95 p_ch[5,5] + 1.052631578947368 p_dis[5,5]
+   - e_sto[5,5] + e_sto[5,6] = 0
+ charge_cap[5,6]: - p_cap[5] + p_ch[5,6] <= 0
+ discharge_cap[5,6]: - p_cap[5] + p_dis[5,6] <= 0
+ converter_cap[5,6]: - p_cap[5] + p_ch[5,6] + p_dis[5,6] <= 0
+ soc_min[5,6]: - 0.1 e_cap[5] + e_sto[5,6] >= 0
+ soc_max[5,6]: - e_cap[5] + e_sto[5,6] <= 0
+ soc_balance[5,6]: - 0.95 p_ch[5,6] + 1.052631578947368 p_dis[5,6]
+   - e_sto[5,6] + e_sto[5,7] = 0
+ charge_cap[5,7]: - p_cap[5] + p_ch[5,7] <= 0
+ discharge_cap[5,7]: - p_cap[5] + p_dis[5,7] <= 0
+ converter_cap[5,7]: - p_cap[5] + p_ch[5,7] + p_dis[5,7] <= 0
+ soc_min[5,7]: - 0.1 e_cap[5] + e_sto[5,7] >= 0
+ soc_max[5,7]: - e_cap[5] + e_sto[5,7] <= 0
+ soc_balance[5,7]: - 0.95 p_ch[5,7] + 1.052631578947368 p_dis[5,7]
+   - e_sto[5,7] + e_sto[5,8] = 0
+ charge_cap[5,8]: - p_cap[5] + p_ch[5,8] <= 0
+ discharge_cap[5,8]: - p_cap[5] + p_dis[5,8] <= 0
+ converter_cap[5,8]: - p_cap[5] + p_ch[5,8] + p_dis[5,8] <= 0
+ soc_min[5,8]: - 0.1 e_cap[5] + e_sto[5,8] >= 0
+ soc_max[5,8]: - e_cap[5] + e_sto[5,8] <= 0
+ soc_balance[5,8]: - 0.95 p_ch[5,8] + 1.052631578947368 p_dis[5,8]
+   - e_sto[5,8] + e_sto[5,9] = 0
+ charge_cap[5,9]: - p_cap[5] + p_ch[5,9] <= 0
+ discharge_cap[5,9]: - p_cap[5] + p_dis[5,9] <= 0
+ converter_cap[5,9]: - p_cap[5] + p_ch[5,9] + p_dis[5,9] <= 0
+ soc_min[5,9]: - 0.1 e_cap[5] + e_sto[5,9] >= 0
+ soc_max[5,9]: - e_cap[5] + e_sto[5,9] <= 0
+ soc_balance[5,9]: - 0.95 p_ch[5,9] + 1.052631578947368 p_dis[5,9]
+   - e_sto[5,9] + e_sto[5,10] = 0
+ charge_cap[5,10]: - p_cap[5] + p_ch[5,10] <= 0
+ discharge_cap[5,10]: - p_cap[5] + p_dis[5,10] <= 0
+ converter_cap[5,10]: - p_cap[5] + p_ch[5,10] + p_dis[5,10] <= 0
+ soc_min[5,10]: - 0.1 e_cap[5] + e_sto[5,10] >= 0
+ soc_max[5,10]: - e_cap[5] + e_sto[5,10] <= 0
+ soc_balance[5,10]: - 0.95 p_ch[5,10] + 1.052631578947368 p_dis[5,10]
+   - e_sto[5,10] + e_sto[5,11] = 0
+ charge_cap[5,11]: - p_cap[5] + p_ch[5,11] <= 0
+ discharge_cap[5,11]: - p_cap[5] + p_dis[5,11] <= 0
+ converter_cap[5,11]: - p_cap[5] + p_ch[5,11] + p_dis[5,11] <= 0
+ soc_min[5,11]: - 0.1 e_cap[5] + e_sto[5,11] >= 0
+ soc_max[5,11]: - e_cap[5] + e_sto[5,11] <= 0
+ soc_balance[5,11]: - 0.95 p_ch[5,11] + 1.052631578947368 p_dis[5,11]
+   - e_sto[5,11] + e_sto[5,12] = 0
+ charge_cap[5,12]: - p_cap[5] + p_ch[5,12] <= 0
+ discharge_cap[5,12]: - p_cap[5] + p_dis[5,12] <= 0
+ converter_cap[5,12]: - p_cap[5] + p_ch[5,12] + p_dis[5,12] <= 0
+ soc_min[5,12]: - 0.1 e_cap[5] + e_sto[5,12] >= 0
+ soc_max[5,12]: - e_cap[5] + e_sto[5,12] <= 0
+ soc_balance[5,12]: - 0.95 p_ch[5,12] + 1.052631578947368 p_dis[5,12]
+   - e_sto[5,12] + e_sto[5,13] = 0
+ charge_cap[5,13]: - p_cap[5] + p_ch[5,13] <= 0
+ discharge_cap[5,13]: - p_cap[5] + p_dis[5,13] <= 0
+ converter_cap[5,13]: - p_cap[5] + p_ch[5,13] + p_dis[5,13] <= 0
+ soc_min[5,13]: - 0.1 e_cap[5] + e_sto[5,13] >= 0
+ soc_max[5,13]: - e_cap[5] + e_sto[5,13] <= 0
+ soc_balance[5,13]: - 0.95 p_ch[5,13] + 1.052631578947368 p_dis[5,13]
+   - e_sto[5,13] + e_sto[5,14] = 0
+ charge_cap[5,14]: - p_cap[5] + p_ch[5,14] <= 0
+ discharge_cap[5,14]: - p_cap[5] + p_dis[5,14] <= 0
+ converter_cap[5,14]: - p_cap[5] + p_ch[5,14] + p_dis[5,14] <= 0
+ soc_min[5,14]: - 0.1 e_cap[5] + e_sto[5,14] >= 0
+ soc_max[5,14]: - e_cap[5] + e_sto[5,14] <= 0
+ soc_balance[5,14]: - 0.95 p_ch[5,14] + 1.052631578947368 p_dis[5,14]
+   - e_sto[5,14] + e_sto[5,15] = 0
+ charge_cap[5,15]: - p_cap[5] + p_ch[5,15] <= 0
+ discharge_cap[5,15]: - p_cap[5] + p_dis[5,15] <= 0
+ converter_cap[5,15]: - p_cap[5] + p_ch[5,15] + p_dis[5,15] <= 0
+ soc_min[5,15]: - 0.1 e_cap[5] + e_sto[5,15] >= 0
+ soc_max[5,15]: - e_cap[5] + e_sto[5,15] <= 0
+ soc_balance[5,15]: - 0.95 p_ch[5,15] + 1.052631578947368 p_dis[5,15]
+   - e_sto[5,15] + e_sto[5,16] = 0
+ charge_cap[5,16]: - p_cap[5] + p_ch[5,16] <= 0
+ discharge_cap[5,16]: - p_cap[5] + p_dis[5,16] <= 0
+ converter_cap[5,16]: - p_cap[5] + p_ch[5,16] + p_dis[5,16] <= 0
+ soc_min[5,16]: - 0.1 e_cap[5] + e_sto[5,16] >= 0
+ soc_max[5,16]: - e_cap[5] + e_sto[5,16] <= 0
+ soc_balance[5,16]: - 0.95 p_ch[5,16] + 1.052631578947368 p_dis[5,16]
+   - e_sto[5,16] + e_sto[5,17] = 0
+ charge_cap[5,17]: - p_cap[5] + p_ch[5,17] <= 0
+ discharge_cap[5,17]: - p_cap[5] + p_dis[5,17] <= 0
+ converter_cap[5,17]: - p_cap[5] + p_ch[5,17] + p_dis[5,17] <= 0
+ soc_min[5,17]: - 0.1 e_cap[5] + e_sto[5,17] >= 0
+ soc_max[5,17]: - e_cap[5] + e_sto[5,17] <= 0
+ soc_balance[5,17]: - 0.95 p_ch[5,17] + 1.052631578947368 p_dis[5,17]
+   - e_sto[5,17] + e_sto[5,18] = 0
+ charge_cap[5,18]: - p_cap[5] + p_ch[5,18] <= 0
+ discharge_cap[5,18]: - p_cap[5] + p_dis[5,18] <= 0
+ converter_cap[5,18]: - p_cap[5] + p_ch[5,18] + p_dis[5,18] <= 0
+ soc_min[5,18]: - 0.1 e_cap[5] + e_sto[5,18] >= 0
+ soc_max[5,18]: - e_cap[5] + e_sto[5,18] <= 0
+ soc_balance[5,18]: - 0.95 p_ch[5,18] + 1.052631578947368 p_dis[5,18]
+   - e_sto[5,18] + e_sto[5,19] = 0
+ charge_cap[5,19]: - p_cap[5] + p_ch[5,19] <= 0
+ discharge_cap[5,19]: - p_cap[5] + p_dis[5,19] <= 0
+ converter_cap[5,19]: - p_cap[5] + p_ch[5,19] + p_dis[5,19] <= 0
+ soc_min[5,19]: - 0.1 e_cap[5] + e_sto[5,19] >= 0
+ soc_max[5,19]: - e_cap[5] + e_sto[5,19] <= 0
+ soc_balance[5,19]: - 0.95 p_ch[5,19] + 1.052631578947368 p_dis[5,19]
+   - e_sto[5,19] + e_sto[5,20] = 0
+ charge_cap[5,20]: - p_cap[5] + p_ch[5,20] <= 0
+ discharge_cap[5,20]: - p_cap[5] + p_dis[5,20] <= 0
+ converter_cap[5,20]: - p_cap[5] + p_ch[5,20] + p_dis[5,20] <= 0
+ soc_min[5,20]: - 0.1 e_cap[5] + e_sto[5,20] >= 0
+ soc_max[5,20]: - e_cap[5] + e_sto[5,20] <= 0
+ soc_balance[5,20]: - 0.95 p_ch[5,20] + 1.052631578947368 p_dis[5,20]
+   - e_sto[5,20] + e_sto[5,21] = 0
+ charge_cap[5,21]: - p_cap[5] + p_ch[5,21] <= 0
+ discharge_cap[5,21]: - p_cap[5] + p_dis[5,21] <= 0
+ converter_cap[5,21]: - p_cap[5] + p_ch[5,21] + p_dis[5,21] <= 0
+ soc_min[5,21]: - 0.1 e_cap[5] + e_sto[5,21] >= 0
+ soc_max[5,21]: - e_cap[5] + e_sto[5,21] <= 0
+ soc_balance[5,21]: - 0.95 p_ch[5,21] + 1.052631578947368 p_dis[5,21]
+   - e_sto[5,21] + e_sto[5,22] = 0
+ charge_cap[5,22]: - p_cap[5] + p_ch[5,22] <= 0
+ discharge_cap[5,22]: - p_cap[5] + p_dis[5,22] <= 0
+ converter_cap[5,22]: - p_cap[5] + p_ch[5,22] + p_dis[5,22] <= 0
+ soc_min[5,22]: - 0.1 e_cap[5] + e_sto[5,22] >= 0
+ soc_max[5,22]: - e_cap[5] + e_sto[5,22] <= 0
+ soc_balance[5,22]: - 0.95 p_ch[5,22] + 1.052631578947368 p_dis[5,22]
+   - e_sto[5,22] + e_sto[5,23] = 0
+ charge_cap[5,23]: - p_cap[5] + p_ch[5,23] <= 0
+ discharge_cap[5,23]: - p_cap[5] + p_dis[5,23] <= 0
+ converter_cap[5,23]: - p_cap[5] + p_ch[5,23] + p_dis[5,23] <= 0
+ soc_min[5,23]: - 0.1 e_cap[5] + e_sto[5,23] >= 0
+ soc_max[5,23]: - e_cap[5] + e_sto[5,23] <= 0
+ soc_balance[5,23]: - 0.95 p_ch[5,23] + 1.052631578947368 p_dis[5,23]
+   + e_sto[5,0] - e_sto[5,23] = 0
+ p_cap_install[6]: - 0.8 y_storage[6] + p_cap[6] <= 0
+ e_cap_install[6]: - 2.4 y_storage[6] + e_cap[6] <= 0
+ initial_soc[6]: - 0.5 e_cap[6] + e_sto[6,0] = 0
+ charge_cap[6,0]: - p_cap[6] + p_ch[6,0] <= 0
+ discharge_cap[6,0]: - p_cap[6] + p_dis[6,0] <= 0
+ converter_cap[6,0]: - p_cap[6] + p_ch[6,0] + p_dis[6,0] <= 0
+ soc_min[6,0]: - 0.1 e_cap[6] + e_sto[6,0] >= 0
+ soc_max[6,0]: - e_cap[6] + e_sto[6,0] <= 0
+ soc_balance[6,0]: - 0.95 p_ch[6,0] + 1.052631578947368 p_dis[6,0]
+   - e_sto[6,0] + e_sto[6,1] = 0
+ charge_cap[6,1]: - p_cap[6] + p_ch[6,1] <= 0
+ discharge_cap[6,1]: - p_cap[6] + p_dis[6,1] <= 0
+ converter_cap[6,1]: - p_cap[6] + p_ch[6,1] + p_dis[6,1] <= 0
+ soc_min[6,1]: - 0.1 e_cap[6] + e_sto[6,1] >= 0
+ soc_max[6,1]: - e_cap[6] + e_sto[6,1] <= 0
+ soc_balance[6,1]: - 0.95 p_ch[6,1] + 1.052631578947368 p_dis[6,1]
+   - e_sto[6,1] + e_sto[6,2] = 0
+ charge_cap[6,2]: - p_cap[6] + p_ch[6,2] <= 0
+ discharge_cap[6,2]: - p_cap[6] + p_dis[6,2] <= 0
+ converter_cap[6,2]: - p_cap[6] + p_ch[6,2] + p_dis[6,2] <= 0
+ soc_min[6,2]: - 0.1 e_cap[6] + e_sto[6,2] >= 0
+ soc_max[6,2]: - e_cap[6] + e_sto[6,2] <= 0
+ soc_balance[6,2]: - 0.95 p_ch[6,2] + 1.052631578947368 p_dis[6,2]
+   - e_sto[6,2] + e_sto[6,3] = 0
+ charge_cap[6,3]: - p_cap[6] + p_ch[6,3] <= 0
+ discharge_cap[6,3]: - p_cap[6] + p_dis[6,3] <= 0
+ converter_cap[6,3]: - p_cap[6] + p_ch[6,3] + p_dis[6,3] <= 0
+ soc_min[6,3]: - 0.1 e_cap[6] + e_sto[6,3] >= 0
+ soc_max[6,3]: - e_cap[6] + e_sto[6,3] <= 0
+ soc_balance[6,3]: - 0.95 p_ch[6,3] + 1.052631578947368 p_dis[6,3]
+   - e_sto[6,3] + e_sto[6,4] = 0
+ charge_cap[6,4]: - p_cap[6] + p_ch[6,4] <= 0
+ discharge_cap[6,4]: - p_cap[6] + p_dis[6,4] <= 0
+ converter_cap[6,4]: - p_cap[6] + p_ch[6,4] + p_dis[6,4] <= 0
+ soc_min[6,4]: - 0.1 e_cap[6] + e_sto[6,4] >= 0
+ soc_max[6,4]: - e_cap[6] + e_sto[6,4] <= 0
+ soc_balance[6,4]: - 0.95 p_ch[6,4] + 1.052631578947368 p_dis[6,4]
+   - e_sto[6,4] + e_sto[6,5] = 0
+ charge_cap[6,5]: - p_cap[6] + p_ch[6,5] <= 0
+ discharge_cap[6,5]: - p_cap[6] + p_dis[6,5] <= 0
+ converter_cap[6,5]: - p_cap[6] + p_ch[6,5] + p_dis[6,5] <= 0
+ soc_min[6,5]: - 0.1 e_cap[6] + e_sto[6,5] >= 0
+ soc_max[6,5]: - e_cap[6] + e_sto[6,5] <= 0
+ soc_balance[6,5]: - 0.95 p_ch[6,5] + 1.052631578947368 p_dis[6,5]
+   - e_sto[6,5] + e_sto[6,6] = 0
+ charge_cap[6,6]: - p_cap[6] + p_ch[6,6] <= 0
+ discharge_cap[6,6]: - p_cap[6] + p_dis[6,6] <= 0
+ converter_cap[6,6]: - p_cap[6] + p_ch[6,6] + p_dis[6,6] <= 0
+ soc_min[6,6]: - 0.1 e_cap[6] + e_sto[6,6] >= 0
+ soc_max[6,6]: - e_cap[6] + e_sto[6,6] <= 0
+ soc_balance[6,6]: - 0.95 p_ch[6,6] + 1.052631578947368 p_dis[6,6]
+   - e_sto[6,6] + e_sto[6,7] = 0
+ charge_cap[6,7]: - p_cap[6] + p_ch[6,7] <= 0
+ discharge_cap[6,7]: - p_cap[6] + p_dis[6,7] <= 0
+ converter_cap[6,7]: - p_cap[6] + p_ch[6,7] + p_dis[6,7] <= 0
+ soc_min[6,7]: - 0.1 e_cap[6] + e_sto[6,7] >= 0
+ soc_max[6,7]: - e_cap[6] + e_sto[6,7] <= 0
+ soc_balance[6,7]: - 0.95 p_ch[6,7] + 1.052631578947368 p_dis[6,7]
+   - e_sto[6,7] + e_sto[6,8] = 0
+ charge_cap[6,8]: - p_cap[6] + p_ch[6,8] <= 0
+ discharge_cap[6,8]: - p_cap[6] + p_dis[6,8] <= 0
+ converter_cap[6,8]: - p_cap[6] + p_ch[6,8] + p_dis[6,8] <= 0
+ soc_min[6,8]: - 0.1 e_cap[6] + e_sto[6,8] >= 0
+ soc_max[6,8]: - e_cap[6] + e_sto[6,8] <= 0
+ soc_balance[6,8]: - 0.95 p_ch[6,8] + 1.052631578947368 p_dis[6,8]
+   - e_sto[6,8] + e_sto[6,9] = 0
+ charge_cap[6,9]: - p_cap[6] + p_ch[6,9] <= 0
+ discharge_cap[6,9]: - p_cap[6] + p_dis[6,9] <= 0
+ converter_cap[6,9]: - p_cap[6] + p_ch[6,9] + p_dis[6,9] <= 0
+ soc_min[6,9]: - 0.1 e_cap[6] + e_sto[6,9] >= 0
+ soc_max[6,9]: - e_cap[6] + e_sto[6,9] <= 0
+ soc_balance[6,9]: - 0.95 p_ch[6,9] + 1.052631578947368 p_dis[6,9]
+   - e_sto[6,9] + e_sto[6,10] = 0
+ charge_cap[6,10]: - p_cap[6] + p_ch[6,10] <= 0
+ discharge_cap[6,10]: - p_cap[6] + p_dis[6,10] <= 0
+ converter_cap[6,10]: - p_cap[6] + p_ch[6,10] + p_dis[6,10] <= 0
+ soc_min[6,10]: - 0.1 e_cap[6] + e_sto[6,10] >= 0
+ soc_max[6,10]: - e_cap[6] + e_sto[6,10] <= 0
+ soc_balance[6,10]: - 0.95 p_ch[6,10] + 1.052631578947368 p_dis[6,10]
+   - e_sto[6,10] + e_sto[6,11] = 0
+ charge_cap[6,11]: - p_cap[6] + p_ch[6,11] <= 0
+ discharge_cap[6,11]: - p_cap[6] + p_dis[6,11] <= 0
+ converter_cap[6,11]: - p_cap[6] + p_ch[6,11] + p_dis[6,11] <= 0
+ soc_min[6,11]: - 0.1 e_cap[6] + e_sto[6,11] >= 0
+ soc_max[6,11]: - e_cap[6] + e_sto[6,11] <= 0
+ soc_balance[6,11]: - 0.95 p_ch[6,11] + 1.052631578947368 p_dis[6,11]
+   - e_sto[6,11] + e_sto[6,12] = 0
+ charge_cap[6,12]: - p_cap[6] + p_ch[6,12] <= 0
+ discharge_cap[6,12]: - p_cap[6] + p_dis[6,12] <= 0
+ converter_cap[6,12]: - p_cap[6] + p_ch[6,12] + p_dis[6,12] <= 0
+ soc_min[6,12]: - 0.1 e_cap[6] + e_sto[6,12] >= 0
+ soc_max[6,12]: - e_cap[6] + e_sto[6,12] <= 0
+ soc_balance[6,12]: - 0.95 p_ch[6,12] + 1.052631578947368 p_dis[6,12]
+   - e_sto[6,12] + e_sto[6,13] = 0
+ charge_cap[6,13]: - p_cap[6] + p_ch[6,13] <= 0
+ discharge_cap[6,13]: - p_cap[6] + p_dis[6,13] <= 0
+ converter_cap[6,13]: - p_cap[6] + p_ch[6,13] + p_dis[6,13] <= 0
+ soc_min[6,13]: - 0.1 e_cap[6] + e_sto[6,13] >= 0
+ soc_max[6,13]: - e_cap[6] + e_sto[6,13] <= 0
+ soc_balance[6,13]: - 0.95 p_ch[6,13] + 1.052631578947368 p_dis[6,13]
+   - e_sto[6,13] + e_sto[6,14] = 0
+ charge_cap[6,14]: - p_cap[6] + p_ch[6,14] <= 0
+ discharge_cap[6,14]: - p_cap[6] + p_dis[6,14] <= 0
+ converter_cap[6,14]: - p_cap[6] + p_ch[6,14] + p_dis[6,14] <= 0
+ soc_min[6,14]: - 0.1 e_cap[6] + e_sto[6,14] >= 0
+ soc_max[6,14]: - e_cap[6] + e_sto[6,14] <= 0
+ soc_balance[6,14]: - 0.95 p_ch[6,14] + 1.052631578947368 p_dis[6,14]
+   - e_sto[6,14] + e_sto[6,15] = 0
+ charge_cap[6,15]: - p_cap[6] + p_ch[6,15] <= 0
+ discharge_cap[6,15]: - p_cap[6] + p_dis[6,15] <= 0
+ converter_cap[6,15]: - p_cap[6] + p_ch[6,15] + p_dis[6,15] <= 0
+ soc_min[6,15]: - 0.1 e_cap[6] + e_sto[6,15] >= 0
+ soc_max[6,15]: - e_cap[6] + e_sto[6,15] <= 0
+ soc_balance[6,15]: - 0.95 p_ch[6,15] + 1.052631578947368 p_dis[6,15]
+   - e_sto[6,15] + e_sto[6,16] = 0
+ charge_cap[6,16]: - p_cap[6] + p_ch[6,16] <= 0
+ discharge_cap[6,16]: - p_cap[6] + p_dis[6,16] <= 0
+ converter_cap[6,16]: - p_cap[6] + p_ch[6,16] + p_dis[6,16] <= 0
+ soc_min[6,16]: - 0.1 e_cap[6] + e_sto[6,16] >= 0
+ soc_max[6,16]: - e_cap[6] + e_sto[6,16] <= 0
+ soc_balance[6,16]: - 0.95 p_ch[6,16] + 1.052631578947368 p_dis[6,16]
+   - e_sto[6,16] + e_sto[6,17] = 0
+ charge_cap[6,17]: - p_cap[6] + p_ch[6,17] <= 0
+ discharge_cap[6,17]: - p_cap[6] + p_dis[6,17] <= 0
+ converter_cap[6,17]: - p_cap[6] + p_ch[6,17] + p_dis[6,17] <= 0
+ soc_min[6,17]: - 0.1 e_cap[6] + e_sto[6,17] >= 0
+ soc_max[6,17]: - e_cap[6] + e_sto[6,17] <= 0
+ soc_balance[6,17]: - 0.95 p_ch[6,17] + 1.052631578947368 p_dis[6,17]
+   - e_sto[6,17] + e_sto[6,18] = 0
+ charge_cap[6,18]: - p_cap[6] + p_ch[6,18] <= 0
+ discharge_cap[6,18]: - p_cap[6] + p_dis[6,18] <= 0
+ converter_cap[6,18]: - p_cap[6] + p_ch[6,18] + p_dis[6,18] <= 0
+ soc_min[6,18]: - 0.1 e_cap[6] + e_sto[6,18] >= 0
+ soc_max[6,18]: - e_cap[6] + e_sto[6,18] <= 0
+ soc_balance[6,18]: - 0.95 p_ch[6,18] + 1.052631578947368 p_dis[6,18]
+   - e_sto[6,18] + e_sto[6,19] = 0
+ charge_cap[6,19]: - p_cap[6] + p_ch[6,19] <= 0
+ discharge_cap[6,19]: - p_cap[6] + p_dis[6,19] <= 0
+ converter_cap[6,19]: - p_cap[6] + p_ch[6,19] + p_dis[6,19] <= 0
+ soc_min[6,19]: - 0.1 e_cap[6] + e_sto[6,19] >= 0
+ soc_max[6,19]: - e_cap[6] + e_sto[6,19] <= 0
+ soc_balance[6,19]: - 0.95 p_ch[6,19] + 1.052631578947368 p_dis[6,19]
+   - e_sto[6,19] + e_sto[6,20] = 0
+ charge_cap[6,20]: - p_cap[6] + p_ch[6,20] <= 0
+ discharge_cap[6,20]: - p_cap[6] + p_dis[6,20] <= 0
+ converter_cap[6,20]: - p_cap[6] + p_ch[6,20] + p_dis[6,20] <= 0
+ soc_min[6,20]: - 0.1 e_cap[6] + e_sto[6,20] >= 0
+ soc_max[6,20]: - e_cap[6] + e_sto[6,20] <= 0
+ soc_balance[6,20]: - 0.95 p_ch[6,20] + 1.052631578947368 p_dis[6,20]
+   - e_sto[6,20] + e_sto[6,21] = 0
+ charge_cap[6,21]: - p_cap[6] + p_ch[6,21] <= 0
+ discharge_cap[6,21]: - p_cap[6] + p_dis[6,21] <= 0
+ converter_cap[6,21]: - p_cap[6] + p_ch[6,21] + p_dis[6,21] <= 0
+ soc_min[6,21]: - 0.1 e_cap[6] + e_sto[6,21] >= 0
+ soc_max[6,21]: - e_cap[6] + e_sto[6,21] <= 0
+ soc_balance[6,21]: - 0.95 p_ch[6,21] + 1.052631578947368 p_dis[6,21]
+   - e_sto[6,21] + e_sto[6,22] = 0
+ charge_cap[6,22]: - p_cap[6] + p_ch[6,22] <= 0
+ discharge_cap[6,22]: - p_cap[6] + p_dis[6,22] <= 0
+ converter_cap[6,22]: - p_cap[6] + p_ch[6,22] + p_dis[6,22] <= 0
+ soc_min[6,22]: - 0.1 e_cap[6] + e_sto[6,22] >= 0
+ soc_max[6,22]: - e_cap[6] + e_sto[6,22] <= 0
+ soc_balance[6,22]: - 0.95 p_ch[6,22] + 1.052631578947368 p_dis[6,22]
+   - e_sto[6,22] + e_sto[6,23] = 0
+ charge_cap[6,23]: - p_cap[6] + p_ch[6,23] <= 0
+ discharge_cap[6,23]: - p_cap[6] + p_dis[6,23] <= 0
+ converter_cap[6,23]: - p_cap[6] + p_ch[6,23] + p_dis[6,23] <= 0
+ soc_min[6,23]: - 0.1 e_cap[6] + e_sto[6,23] >= 0
+ soc_max[6,23]: - e_cap[6] + e_sto[6,23] <= 0
+ soc_balance[6,23]: - 0.95 p_ch[6,23] + 1.052631578947368 p_dis[6,23]
+   + e_sto[6,0] - e_sto[6,23] = 0
+ slack_v[0]: v[1,0] = 1
+ grid_p[0]: - P[L12,0] + p_grid[0] = 0
+ grid_q[0]: - Q[L12,0] + q_grid[0] = 0
+ voltage_drop[L12,0]: 0.002 P[L12,0] + 0.006 Q[L12,0] - v[1,0] + v[2,0]
+   - 0.001 ell[L12,0] = 0
+ voltage_drop[L23,0]: 0.0024 P[L23,0] + 0.005 Q[L23,0] - v[2,0] + v[3,0]
+   - 0.000769 ell[L23,0] = 0
+ voltage_drop[L34,0]: 0.002 P[L34,0] + 0.004 Q[L34,0] - v[3,0] + v[4,0]
+   - 0.0005 ell[L34,0] = 0
+ voltage_drop[L45,0]: 0.0022 P[L45,0] + 0.0044 Q[L45,0] - v[4,0] + v[5,0]
+   - 0.000605 ell[L45,0] = 0
+ voltage_drop[L56,0]: 0.0018 P[L56,0] + 0.0036 Q[L56,0] - v[5,0] + v[6,0]
+   - 0.000405 ell[L56,0] = 0
+ p_balance[2,0]: P[L12,0] - P[L23,0] - 0.1 ell[L12,0] = 0.3825
+ q_balance[2,0]: Q[L12,0] - Q[L23,0] - 0.3 ell[L12,0] = 0.1257216702309152
+ p_balance[3,0]: P[L23,0] - P[L34,0] - 0.12 ell[L23,0] - p_ch[3,0]
+   + p_dis[3,0] = 0.385
+ q_balance[3,0]: Q[L23,0] - Q[L34,0] - 0.25 ell[L23,0]
+   = 0.1265433804938624
+ p_balance[4,0]: P[L34,0] - P[L45,0] - 0.1 ell[L34,0] - p_ch[4,0]
+   + p_dis[4,0] = 0.525
+ q_balance[4,0]: Q[L34,0] - Q[L45,0] - 0.2 ell[L34,0] = 0.1725591552189032
+ p_balance[5,0]: P[L45,0] - P[L56,0] - 0.11 ell[L45,0] - p_ch[5,0]
+   + p_dis[5,0] = 0.27
+ q_balance[5,0]: Q[L45,0] - Q[L56,0] - 0.22 ell[L45,0]
+   = 0.0887447083982931
+ p_balance[6,0]: P[L56,0] - 0.09 ell[L56,0] + p_dg[0] - p_ch[6,0]
+   + p_dis[6,0] = 0.175
+ q_balance[6,0]: Q[L56,0] - 0.18 ell[L56,0] = 0.0575197184063011
+ slack_v[1]: v[1,1] = 1
+ grid_p[1]: - P[L12,1] + p_grid[1] = 0
+ grid_q[1]: - Q[L12,1] + q_grid[1] = 0
+ voltage_drop[L12,1]: 0.002 P[L12,1] + 0.006 Q[L12,1] - v[1,1] + v[2,1]
+   - 0.001 ell[L12,1] = 0
+ voltage_drop[L23,1]: 0.0024 P[L23,1] + 0.005 Q[L23,1] - v[2,1] + v[3,1]
+   - 0.000769 ell[L23,1] = 0
+ voltage_drop[L34,1]: 0.002 P[L34,1] + 0.004 Q[L34,1] - v[3,1] + v[4,1]
+   - 0.0005 ell[L34,1] = 0
+ voltage_drop[L45,1]: 0.0022 P[L45,1] + 0.0044 Q[L45,1] - v[4,1] + v[5,1]
+   - 0.000605 ell[L45,1] = 0
+ voltage_drop[L56,1]: 0.0018 P[L56,1] + 0.0036 Q[L56,1] - v[5,1] + v[6,1]
+   - 0.000405 ell[L56,1] = 0
+ p_balance[2,1]: P[L12,1] - P[L23,1] - 0.1 ell[L12,1] = 0.357
+ q_balance[2,1]: Q[L12,1] - Q[L23,1] - 0.3 ell[L12,1] = 0.1173402255488542
+ p_balance[3,1]: P[L23,1] - P[L34,1] - 0.12 ell[L23,1] - p_ch[3,1]
+   + p_dis[3,1] = 0.363
+ q_balance[3,1]: Q[L23,1] - Q[L34,1] - 0.25 ell[L23,1]
+   = 0.1193123301799274
+ p_balance[4,1]: P[L34,1] - P[L45,1] - 0.1 ell[L34,1] - p_ch[4,1]
+   + p_dis[4,1] = 0.51
+ q_balance[4,1]: Q[L34,1] - Q[L45,1] - 0.2 ell[L34,1] = 0.1676288936412202
+ p_balance[5,1]: P[L45,1] - P[L56,1] - 0.11 ell[L45,1] - p_ch[5,1]
+   + p_dis[5,1] = 0.252
+ q_balance[5,1]: Q[L45,1] - Q[L56,1] - 0.22 ell[L45,1]
+   = 0.0828283945050735
+ p_balance[6,1]: P[L56,1] - 0.09 ell[L56,1] + p_dg[1] - p_ch[6,1]
+   + p_dis[6,1] = 0.165
+ q_balance[6,1]: Q[L56,1] - 0.18 ell[L56,1] = 0.0542328773545124
+ slack_v[2]: v[1,2] = 1
+ grid_p[2]: - P[L12,2] + p_grid[2] = 0
+ grid_q[2]: - Q[L12,2] + q_grid[2] = 0
+ voltage_drop[L12,2]: 0.002 P[L12,2] + 0.006 Q[L12,2] - v[1,2] + v[2,2]
+   - 0.001 ell[L12,2] = 0
+ voltage_drop[L23,2]: 0.0024 P[L23,2] + 0.005 Q[L23,2] - v[2,2] + v[3,2]
+   - 0.000769 ell[L23,2] = 0
+ voltage_drop[L34,2]: 0.002 P[L34,2] + 0.004 Q[L34,2] - v[3,2] + v[4,2]
+   - 0.0005 ell[L34,2] = 0
+ voltage_drop[L45,2]: 0.0022 P[L45,2] + 0.0044 Q[L45,2] - v[4,2] + v[5,2]
+   - 0.000605 ell[L45,2] = 0
+ voltage_drop[L56,2]: 0.0018 P[L56,2] + 0.0036 Q[L56,2] - v[5,2] + v[6,2]
+   - 0.000405 ell[L56,2] = 0
+ p_balance[2,2]: P[L12,2] - P[L23,2] - 0.1 ell[L12,2] = 0.34
+ q_balance[2,2]: Q[L12,2] - Q[L23,2] - 0.3 ell[L12,2] = 0.1117525957608135
+ p_balance[3,2]: P[L23,2] - P[L34,2] - 0.12 ell[L23,2] - p_ch[3,2]
+   + p_dis[3,2] = 0.352
+ q_balance[3,2]: Q[L23,2] - Q[L34,2] - 0.25 ell[L23,2]
+   = 0.1156968050229599
+ p_balance[4,2]: P[L34,2] - P[L45,2] - 0.1 ell[L34,2] - p_ch[4,2]
+   + p_dis[4,2] = 0.495
+ q_balance[4,2]: Q[L34,2] - Q[L45,2] - 0.2 ell[L34,2] = 0.1626986320635373
+ p_balance[5,2]: P[L45,2] - P[L56,2] - 0.11 ell[L45,2] - p_ch[5,2]
+   + p_dis[5,2] = 0.24
+ q_balance[5,2]: Q[L45,2] - Q[L56,2] - 0.22 ell[L45,2]
+   = 0.0788841852429272
+ p_balance[6,2]: P[L56,2] - 0.09 ell[L56,2] + p_dg[2] - p_ch[6,2]
+   + p_dis[6,2] = 0.16
+ q_balance[6,2]: Q[L56,2] - 0.18 ell[L56,2] = 0.0525894568286181
+ slack_v[3]: v[1,3] = 1
+ grid_p[3]: - P[L12,3] + p_grid[3] = 0
+ grid_q[3]: - Q[L12,3] + q_grid[3] = 0
+ voltage_drop[L12,3]: 0.002 P[L12,3] + 0.006 Q[L12,3] - v[1,3] + v[2,3]
+   - 0.001 ell[L12,3] = 0
+ voltage_drop[L23,3]: 0.0024 P[L23,3] + 0.005 Q[L23,3] - v[2,3] + v[3,3]
+   - 0.000769 ell[L23,3] = 0
+ voltage_drop[L34,3]: 0.002 P[L34,3] + 0.004 Q[L34,3] - v[3,3] + v[4,3]
+   - 0.0005 ell[L34,3] = 0
+ voltage_drop[L45,3]: 0.0022 P[L45,3] + 0.0044 Q[L45,3] - v[4,3] + v[5,3]
+   - 0.000605 ell[L45,3] = 0
+ voltage_drop[L56,3]: 0.0018 P[L56,3] + 0.0036 Q[L56,3] - v[5,3] + v[6,3]
+   - 0.000405 ell[L56,3] = 0
+ p_balance[2,3]: P[L12,3] - P[L23,3] - 0.1 ell[L12,3] = 0.3315
+ q_balance[2,3]: Q[L12,3] - Q[L23,3] - 0.3 ell[L12,3] = 0.1089587808667932
+ p_balance[3,3]: P[L23,3] - P[L34,3] - 0.12 ell[L23,3] - p_ch[3,3]
+   + p_dis[3,3] = 0.341
+ q_balance[3,3]: Q[L23,3] - Q[L34,3] - 0.25 ell[L23,3]
+   = 0.1120812798659924
+ p_balance[4,3]: P[L34,3] - P[L45,3] - 0.1 ell[L34,3] - p_ch[4,3]
+   + p_dis[4,3] = 0.4875
+ q_balance[4,3]: Q[L34,3] - Q[L45,3] - 0.2 ell[L34,3] = 0.1602335012746958
+ p_balance[5,3]: P[L45,3] - P[L56,3] - 0.11 ell[L45,3] - p_ch[5,3]
+   + p_dis[5,3] = 0.234
+ q_balance[5,3]: Q[L45,3] - Q[L56,3] - 0.22 ell[L45,3] = 0.076912080611854
+ p_balance[6,3]: P[L56,3] - 0.09 ell[L56,3] + p_dg[3] - p_ch[6,3]
+   + p_dis[6,3] = 0.155
+ q_balance[6,3]: Q[L56,3] - 0.18 ell[L56,3] = 0.0509460363027238
+ slack_v[4]: v[1,4] = 1
+ grid_p[4]: - P[L12,4] + p_grid[4] = 0
+ grid_q[4]: - Q[L12,4] + q_grid[4] = 0
+ voltage_drop[L12,4]: 0.002 P[L12,4] + 0.006 Q[L12,4] - v[1,4] + v[2,4]
+   - 0.001 ell[L12,4] = 0
+ voltage_drop[L23,4]: 0.0024 P[L23,4] + 0.005 Q[L23,4] - v[2,4] + v[3,4]
+   - 0.000769 ell[L23,4] = 0
+ voltage_drop[L34,4]: 0.002 P[L34,4] + 0.004 Q[L34,4] - v[3,4] + v[4,4]
+   - 0.0005 ell[L34,4] = 0
+ voltage_drop[L45,4]: 0.0022 P[L45,4] + 0.0044 Q[L45,4] - v[4,4] + v[5,4]
+   - 0.000605 ell[L45,4] = 0
+ voltage_drop[L56,4]: 0.0018 P[L56,4] + 0.0036 Q[L56,4] - v[5,4] + v[6,4]
+   - 0.000405 ell[L56,4] = 0
+ p_balance[2,4]: P[L12,4] - P[L23,4] - 0.1 ell[L12,4] = 0.34
+ q_balance[2,4]: Q[L12,4] - Q[L23,4] - 0.3 ell[L12,4] = 0.1117525957608135
+ p_balance[3,4]: P[L23,4] - P[L34,4] - 0.12 ell[L23,4] - p_ch[3,4]
+   + p_dis[3,4] = 0.352
+ q_balance[3,4]: Q[L23,4] - Q[L34,4] - 0.25 ell[L23,4]
+   = 0.1156968050229599
+ p_balance[4,4]: P[L34,4] - P[L45,4] - 0.1 ell[L34,4] - p_ch[4,4]
+   + p_dis[4,4] = 0.495
+ q_balance[4,4]: Q[L34,4] - Q[L45,4] - 0.2 ell[L34,4] = 0.1626986320635373
+ p_balance[5,4]: P[L45,4] - P[L56,4] - 0.11 ell[L45,4] - p_ch[5,4]
+   + p_dis[5,4] = 0.24
+ q_balance[5,4]: Q[L45,4] - Q[L56,4] - 0.22 ell[L45,4]
+   = 0.0788841852429272
+ p_balance[6,4]: P[L56,4] - 0.09 ell[L56,4] + p_dg[4] - p_ch[6,4]
+   + p_dis[6,4] = 0.16
+ q_balance[6,4]: Q[L56,4] - 0.18 ell[L56,4] = 0.0525894568286181
+ slack_v[5]: v[1,5] = 1
+ grid_p[5]: - P[L12,5] + p_grid[5] = 0
+ grid_q[5]: - Q[L12,5] + q_grid[5] = 0
+ voltage_drop[L12,5]: 0.002 P[L12,5] + 0.006 Q[L12,5] - v[1,5] + v[2,5]
+   - 0.001 ell[L12,5] = 0
+ voltage_drop[L23,5]: 0.0024 P[L23,5] + 0.005 Q[L23,5] - v[2,5] + v[3,5]
+   - 0.000769 ell[L23,5] = 0
+ voltage_drop[L34,5]: 0.002 P[L34,5] + 0.004 Q[L34,5] - v[3,5] + v[4,5]
+   - 0.0005 ell[L34,5] = 0
+ voltage_drop[L45,5]: 0.0022 P[L45,5] + 0.0044 Q[L45,5] - v[4,5] + v[5,5]
+   - 0.000605 ell[L45,5] = 0
+ voltage_drop[L56,5]: 0.0018 P[L56,5] + 0.0036 Q[L56,5] - v[5,5] + v[6,5]
+   - 0.000405 ell[L56,5] = 0
+ p_balance[2,5]: P[L12,5] - P[L23,5] - 0.1 ell[L12,5] = 0.3995
+ q_balance[2,5]: Q[L12,5] - Q[L23,5] - 0.3 ell[L12,5] = 0.1313093000189559
+ p_balance[3,5]: P[L23,5] - P[L34,5] - 0.12 ell[L23,5] - p_ch[3,5]
+   + p_dis[3,5] = 0.418
+ q_balance[3,5]: Q[L23,5] - Q[L34,5] - 0.25 ell[L23,5]
+   = 0.1373899559647648
+ p_balance[4,5]: P[L34,5] - P[L45,5] - 0.1 ell[L34,5] - p_ch[4,5]
+   + p_dis[4,5] = 0.54
+ q_balance[4,5]: Q[L34,5] - Q[L45,5] - 0.2 ell[L34,5] = 0.1774894167965861
+ p_balance[5,5]: P[L45,5] - P[L56,5] - 0.11 ell[L45,5] - p_ch[5,5]
+   + p_dis[5,5] = 0.282
+ q_balance[5,5]: Q[L45,5] - Q[L56,5] - 0.22 ell[L45,5]
+   = 0.0926889176604394
+ p_balance[6,5]: P[L56,5] - 0.09 ell[L56,5] + p_dg[5] - p_ch[6,5]
+   + p_dis[6,5] = 0.19
+ q_balance[6,5]: Q[L56,5] - 0.18 ell[L56,5] = 0.062449979983984
+ slack_v[6]: v[1,6] = 1
+ grid_p[6]: - P[L12,6] + p_grid[6] = 0
+ grid_q[6]: - Q[L12,6] + q_grid[6] = 0
+ voltage_drop[L12,6]: 0.002 P[L12,6] + 0.006 Q[L12,6] - v[1,6] + v[2,6]
+   - 0.001 ell[L12,6] = 0
+ voltage_drop[L23,6]: 0.0024 P[L23,6] + 0.005 Q[L23,6] - v[2,6] + v[3,6]
+   - 0.000769 ell[L23,6] = 0
+ voltage_drop[L34,6]: 0.002 P[L34,6] + 0.004 Q[L34,6] - v[3,6] + v[4,6]
+   - 0.0005 ell[L34,6] = 0
+ voltage_drop[L45,6]: 0.0022 P[L45,6] + 0.0044 Q[L45,6] - v[4,6] + v[5,6]
+   - 0.000605 ell[L45,6] = 0
+ voltage_drop[L56,6]: 0.0018 P[L56,6] + 0.0036 Q[L56,6] - v[5,6] + v[6,6]
+   - 0.000405 ell[L56,6] = 0
+ p_balance[2,6]: P[L12,6] - P[L23,6] - 0.1 ell[L12,6] = 0.51
+ q_balance[2,6]: Q[L12,6] - Q[L23,6] - 0.3 ell[L12,6] = 0.1676288936412202
+ p_balance[3,6]: P[L23,6] - P[L34,6] - 0.12 ell[L23,6] - p_ch[3,6]
+   + p_dis[3,6] = 0.605
+ q_balance[3,6]: Q[L23,6] - Q[L34,6] - 0.25 ell[L23,6]
+   = 0.1988538836332123
+ p_balance[4,6]: P[L34,6] - P[L45,6] - 0.1 ell[L34,6] - p_ch[4,6]
+   + p_dis[4,6] = 0.6
+ q_balance[4,6]: Q[L34,6] - Q[L45,6] - 0.2 ell[L34,6] = 0.1972104631073179
+ p_balance[5,6]: P[L45,6] - P[L56,6] - 0.11 ell[L45,6] - p_ch[5,6]
+   + p_dis[5,6] = 0.36
+ q_balance[5,6]: Q[L45,6] - Q[L56,6] - 0.22 ell[L45,6]
+   = 0.1183262778643907
+ p_balance[6,6]: P[L56,6] - 0.09 ell[L56,6] + p_dg[6] - p_ch[6,6]
+   + p_dis[6,6] = 0.275
+ q_balance[6,6]: Q[L56,6] - 0.18 ell[L56,6] = 0.0903881289241874
+ slack_v[7]: v[1,7] = 1
+ grid_p[7]: - P[L12,7] + p_grid[7] = 0
+ grid_q[7]: - Q[L12,7] + q_grid[7] = 0
+ voltage_drop[L12,7]: 0.002 P[L12,7] + 0.006 Q[L12,7] - v[1,7] + v[2,7]
+   - 0.001 ell[L12,7] = 0
+ voltage_drop[L23,7]: 0.0024 P[L23,7] + 0.005 Q[L23,7] - v[2,7] + v[3,7]
+   - 0.000769 ell[L23,7] = 0
+ voltage_drop[L34,7]: 0.002 P[L34,7] + 0.004 Q[L34,7] - v[3,7] + v[4,7]
+   - 0.0005 ell[L34,7] = 0
+ voltage_drop[L45,7]: 0.0022 P[L45,7] + 0.0044 Q[L45,7] - v[4,7] + v[5,7]
+   - 0.000605 ell[L45,7] = 0
+ voltage_drop[L56,7]: 0.0018 P[L56,7] + 0.0036 Q[L56,7] - v[5,7] + v[6,7]
+   - 0.000405 ell[L56,7] = 0
+ p_balance[2,7]: P[L12,7] - P[L23,7] - 0.1 ell[L12,7] = 0.612
+ q_balance[2,7]: Q[L12,7] - Q[L23,7] - 0.3 ell[L12,7] = 0.2011546723694643
+ p_balance[3,7]: P[L23,7] - P[L34,7] - 0.12 ell[L23,7] - p_ch[3,7]
+   + p_dis[3,7] = 0.825
+ q_balance[3,7]: Q[L23,7] - Q[L34,7] - 0.25 ell[L23,7]
+   = 0.2711643867725622
+ p_balance[4,7]: P[L34,7] - P[L45,7] - 0.1 ell[L34,7] - p_ch[4,7]
+   + p_dis[4,7] = 0.66
+ q_balance[4,7]: Q[L34,7] - Q[L45,7] - 0.2 ell[L34,7] = 0.2169315094180497
+ p_balance[5,7]: P[L45,7] - P[L56,7] - 0.11 ell[L45,7] - p_ch[5,7]
+   + p_dis[5,7] = 0.432
+ q_balance[5,7]: Q[L45,7] - Q[L56,7] - 0.22 ell[L45,7]
+   = 0.1419915334372689
+ p_balance[6,7]: P[L56,7] - 0.09 ell[L56,7] + p_dg[7] - p_ch[6,7]
+   + p_dis[6,7] = 0.375
+ q_balance[6,7]: Q[L56,7] - 0.18 ell[L56,7] = 0.1232565394420737
+ slack_v[8]: v[1,8] = 1
+ grid_p[8]: - P[L12,8] + p_grid[8] = 0
+ grid_q[8]: - Q[L12,8] + q_grid[8] = 0
+ voltage_drop[L12,8]: 0.002 P[L12,8] + 0.006 Q[L12,8] - v[1,8] + v[2,8]
+   - 0.001 ell[L12,8] = 0
+ voltage_drop[L23,8]: 0.0024 P[L23,8] + 0.005 Q[L23,8] - v[2,8] + v[3,8]
+   - 0.000769 ell[L23,8] = 0
+ voltage_drop[L34,8]: 0.002 P[L34,8] + 0.004 Q[L34,8] - v[3,8] + v[4,8]
+   - 0.0005 ell[L34,8] = 0
+ voltage_drop[L45,8]: 0.0022 P[L45,8] + 0.0044 Q[L45,8] - v[4,8] + v[5,8]
+   - 0.000605 ell[L45,8] = 0
+ voltage_drop[L56,8]: 0.0018 P[L56,8] + 0.0036 Q[L56,8] - v[5,8] + v[6,8]
+   - 0.000405 ell[L56,8] = 0
+ p_balance[2,8]: P[L12,8] - P[L23,8] - 0.1 ell[L12,8] = 0.646
+ q_balance[2,8]: Q[L12,8] - Q[L23,8] - 0.3 ell[L12,8] = 0.2123299319455456
+ p_balance[3,8]: P[L23,8] - P[L34,8] - 0.12 ell[L23,8] - p_ch[3,8]
+   + p_dis[3,8] = 0.99
+ q_balance[3,8]: Q[L23,8] - Q[L34,8] - 0.25 ell[L23,8]
+   = 0.3253972641270746
+ p_balance[4,8]: P[L34,8] - P[L45,8] - 0.1 ell[L34,8] - p_ch[4,8]
+   + p_dis[4,8] = 0.69
+ q_balance[4,8]: Q[L34,8] - Q[L45,8] - 0.2 ell[L34,8] = 0.2267920325734156
+ p_balance[5,8]: P[L45,8] - P[L56,8] - 0.11 ell[L45,8] - p_ch[5,8]
+   + p_dis[5,8] = 0.456
+ q_balance[5,8]: Q[L45,8] - Q[L56,8] - 0.22 ell[L45,8]
+   = 0.1498799519615616
+ p_balance[6,8]: P[L56,8] - 0.09 ell[L56,8] + p_dg[8] - p_ch[6,8]
+   + p_dis[6,8] = 0.45
+ q_balance[6,8]: Q[L56,8] - 0.18 ell[L56,8] = 0.1479078473304885
+ slack_v[9]: v[1,9] = 1
+ grid_p[9]: - P[L12,9] + p_grid[9] = 0
+ grid_q[9]: - Q[L12,9] + q_grid[9] = 0
+ voltage_drop[L12,9]: 0.002 P[L12,9] + 0.006 Q[L12,9] - v[1,9] + v[2,9]
+   - 0.001 ell[L12,9] = 0
+ voltage_drop[L23,9]: 0.0024 P[L23,9] + 0.005 Q[L23,9] - v[2,9] + v[3,9]
+   - 0.000769 ell[L23,9] = 0
+ voltage_drop[L34,9]: 0.002 P[L34,9] + 0.004 Q[L34,9] - v[3,9] + v[4,9]
+   - 0.0005 ell[L34,9] = 0
+ voltage_drop[L45,9]: 0.0022 P[L45,9] + 0.0044 Q[L45,9] - v[4,9] + v[5,9]
+   - 0.000605 ell[L45,9] = 0
+ voltage_drop[L56,9]: 0.0018 P[L56,9] + 0.0036 Q[L56,9] - v[5,9] + v[6,9]
+   - 0.000405 ell[L56,9] = 0
+ p_balance[2,9]: P[L12,9] - P[L23,9] - 0.1 ell[L12,9] = 0.595
+ q_balance[2,9]: Q[L12,9] - Q[L23,9] - 0.3 ell[L12,9] = 0.1955670425814236
+ p_balance[3,9]: P[L23,9] - P[L34,9] - 0.12 ell[L23,9] - p_ch[3,9]
+   + p_dis[3,9] = 1.078
+ q_balance[3,9]: Q[L23,9] - Q[L34,9] - 0.25 ell[L23,9]
+   = 0.3543214653828146
+ p_balance[4,9]: P[L34,9] - P[L45,9] - 0.1 ell[L34,9] - p_ch[4,9]
+   + p_dis[4,9] = 0.7125
+ q_balance[4,9]: Q[L34,9] - Q[L45,9] - 0.2 ell[L34,9] = 0.23418742493994
+ p_balance[5,9]: P[L45,9] - P[L56,9] - 0.11 ell[L45,9] - p_ch[5,9]
+   + p_dis[5,9] = 0.42
+ q_balance[5,9]: Q[L45,9] - Q[L56,9] - 0.22 ell[L45,9]
+   = 0.1380473241751225
+ p_balance[6,9]: P[L56,9] - 0.09 ell[L56,9] + p_dg[9] - p_ch[6,9]
+   + p_dis[6,9] = 0.49
+ q_balance[6,9]: Q[L56,9] - 0.18 ell[L56,9] = 0.161055211537643
+ slack_v[10]: v[1,10] = 1
+ grid_p[10]: - P[L12,10] + p_grid[10] = 0
+ grid_q[10]: - Q[L12,10] + q_grid[10] = 0
+ voltage_drop[L12,10]: 0.002 P[L12,10] + 0.006 Q[L12,10] - v[1,10]
+   + v[2,10] - 0.001 ell[L12,10] = 0
+ voltage_drop[L23,10]: 0.0024 P[L23,10] + 0.005 Q[L23,10] - v[2,10]
+   + v[3,10] - 0.000769 ell[L23,10] = 0
+ voltage_drop[L34,10]: 0.002 P[L34,10] + 0.004 Q[L34,10] - v[3,10]
+   + v[4,10] - 0.0005 ell[L34,10] = 0
+ voltage_drop[L45,10]: 0.0022 P[L45,10] + 0.0044 Q[L45,10] - v[4,10]
+   + v[5,10] - 0.000605 ell[L45,10] = 0
+ voltage_drop[L56,10]: 0.0018 P[L56,10] + 0.0036 Q[L56,10] - v[5,10]
+   + v[6,10] - 0.000405 ell[L56,10] = 0
+ p_balance[2,10]: P[L12,10] - P[L23,10] - 0.1 ell[L12,10] = 0.561
+ q_balance[2,10]: Q[L12,10] - Q[L23,10] - 0.3 ell[L12,10]
+   = 0.1843917830053423
+ p_balance[3,10]: P[L23,10] - P[L34,10] - 0.12 ell[L23,10] - p_ch[3,10]
+   + p_dis[3,10] = 1.1
+ q_balance[3,10]: Q[L23,10] - Q[L34,10] - 0.25 ell[L23,10]
+   = 0.3615525156967496
+ p_balance[4,10]: P[L34,10] - P[L45,10] - 0.1 ell[L34,10] - p_ch[4,10]
+   + p_dis[4,10] = 0.72
+ q_balance[4,10]: Q[L34,10] - Q[L45,10] - 0.2 ell[L34,10]
+   = 0.2366525557287815
+ p_balance[5,10]: P[L45,10] - P[L56,10] - 0.11 ell[L45,10] - p_ch[5,10]
+   + p_dis[5,10] = 0.396
+ q_balance[5,10]: Q[L45,10] - Q[L56,10] - 0.22 ell[L45,10]
+   = 0.1301589056508298
+ p_balance[6,10]: P[L56,10] - 0.09 ell[L56,10] + p_dg[10] - p_ch[6,10]
+   + p_dis[6,10] = 0.5
+ q_balance[6,10]: Q[L56,10] - 0.18 ell[L56,10] = 0.1643420525894316
+ slack_v[11]: v[1,11] = 1
+ grid_p[11]: - P[L12,11] + p_grid[11] = 0
+ grid_q[11]: - Q[L12,11] + q_grid[11] = 0
+ voltage_drop[L12,11]: 0.002 P[L12,11] + 0.006 Q[L12,11] - v[1,11]
+   + v[2,11] - 0.001 ell[L12,11] = 0
+ voltage_drop[L23,11]: 0.0024 P[L23,11] + 0.005 Q[L23,11] - v[2,11]
+   + v[3,11] - 0.000769 ell[L23,11] = 0
+ voltage_drop[L34,11]: 0.002 P[L34,11] + 0.004 Q[L34,11] - v[3,11]
+   + v[4,11] - 0.0005 ell[L34,11] = 0
+ voltage_drop[L45,11]: 0.0022 P[L45,11] + 0.0044 Q[L45,11] - v[4,11]
+   + v[5,11] - 0.000605 ell[L45,11] = 0
+ voltage_drop[L56,11]: 0.0018 P[L56,11] + 0.0036 Q[L56,11] - v[5,11]
+   + v[6,11] - 0.000405 ell[L56,11] = 0
+ p_balance[2,11]: P[L12,11] - P[L23,11] - 0.1 ell[L12,11] = 0.544
+ q_balance[2,11]: Q[L12,11] - Q[L23,11] - 0.3 ell[L12,11]
+   = 0.1788041532173016
+ p_balance[3,11]: P[L23,11] - P[L34,11] - 0.12 ell[L23,11] - p_ch[3,11]
+   + p_dis[3,11] = 1.078
+ q_balance[3,11]: Q[L23,11] - Q[L34,11] - 0.25 ell[L23,11]
+   = 0.3543214653828146
+ p_balance[4,11]: P[L34,11] - P[L45,11] - 0.1 ell[L34,11] - p_ch[4,11]
+   + p_dis[4,11] = 0.7275
+ q_balance[4,11]: Q[L34,11] - Q[L45,11] - 0.2 ell[L34,11]
+   = 0.239117686517623
+ p_balance[5,11]: P[L45,11] - P[L56,11] - 0.11 ell[L45,11] - p_ch[5,11]
+   + p_dis[5,11] = 0.384
+ q_balance[5,11]: Q[L45,11] - Q[L56,11] - 0.22 ell[L45,11]
+   = 0.1262146963886835
+ p_balance[6,11]: P[L56,11] - 0.09 ell[L56,11] + p_dg[11] - p_ch[6,11]
+   + p_dis[6,11] = 0.49
+ q_balance[6,11]: Q[L56,11] - 0.18 ell[L56,11] = 0.161055211537643
+ slack_v[12]: v[1,12] = 1
+ grid_p[12]: - P[L12,12] + p_grid[12] = 0
+ grid_q[12]: - Q[L12,12] + q_grid[12] = 0
+ voltage_drop[L12,12]: 0.002 P[L12,12] + 0.006 Q[L12,12] - v[1,12]
+   + v[2,12] - 0.001 ell[L12,12] = 0
+ voltage_drop[L23,12]: 0.0024 P[L23,12] + 0.005 Q[L23,12] - v[2,12]
+   + v[3,12] - 0.000769 ell[L23,12] = 0
+ voltage_drop[L34,12]: 0.002 P[L34,12] + 0.004 Q[L34,12] - v[3,12]
+   + v[4,12] - 0.0005 ell[L34,12] = 0
+ voltage_drop[L45,12]: 0.0022 P[L45,12] + 0.0044 Q[L45,12] - v[4,12]
+   + v[5,12] - 0.000605 ell[L45,12] = 0
+ voltage_drop[L56,12]: 0.0018 P[L56,12] + 0.0036 Q[L56,12] - v[5,12]
+   + v[6,12] - 0.000405 ell[L56,12] = 0
+ p_balance[2,12]: P[L12,12] - P[L23,12] - 0.1 ell[L12,12] = 0.527
+ q_balance[2,12]: Q[L12,12] - Q[L23,12] - 0.3 ell[L12,12]
+   = 0.1732165234292609
+ p_balance[3,12]: P[L23,12] - P[L34,12] - 0.12 ell[L23,12] - p_ch[3,12]
+   + p_dis[3,12] = 1.045
+ q_balance[3,12]: Q[L23,12] - Q[L34,12] - 0.25 ell[L23,12]
+   = 0.3434748899119121
+ p_balance[4,12]: P[L34,12] - P[L45,12] - 0.1 ell[L34,12] - p_ch[4,12]
+   + p_dis[4,12] = 0.72
+ q_balance[4,12]: Q[L34,12] - Q[L45,12] - 0.2 ell[L34,12]
+   = 0.2366525557287815
+ p_balance[5,12]: P[L45,12] - P[L56,12] - 0.11 ell[L45,12] - p_ch[5,12]
+   + p_dis[5,12] = 0.372
+ q_balance[5,12]: Q[L45,12] - Q[L56,12] - 0.22 ell[L45,12]
+   = 0.1222704871265371
+ p_balance[6,12]: P[L56,12] - 0.09 ell[L56,12] + p_dg[12] - p_ch[6,12]
+   + p_dis[6,12] = 0.475
+ q_balance[6,12]: Q[L56,12] - 0.18 ell[L56,12] = 0.15612494995996
+ slack_v[13]: v[1,13] = 1
+ grid_p[13]: - P[L12,13] + p_grid[13] = 0
+ grid_q[13]: - Q[L12,13] + q_grid[13] = 0
+ voltage_drop[L12,13]: 0.002 P[L12,13] + 0.006 Q[L12,13] - v[1,13]
+   + v[2,13] - 0.001 ell[L12,13] = 0
+ voltage_drop[L23,13]: 0.0024 P[L23,13] + 0.005 Q[L23,13] - v[2,13]
+   + v[3,13] - 0.000769 ell[L23,13] = 0
+ voltage_drop[L34,13]: 0.002 P[L34,13] + 0.004 Q[L34,13] - v[3,13]
+   + v[4,13] - 0.0005 ell[L34,13] = 0
+ voltage_drop[L45,13]: 0.0022 P[L45,13] + 0.0044 Q[L45,13] - v[4,13]
+   + v[5,13] - 0.000605 ell[L45,13] = 0
+ voltage_drop[L56,13]: 0.0018 P[L56,13] + 0.0036 Q[L56,13] - v[5,13]
+   + v[6,13] - 0.000405 ell[L56,13] = 0
+ p_balance[2,13]: P[L12,13] - P[L23,13] - 0.1 ell[L12,13] = 0.5185
+ q_balance[2,13]: Q[L12,13] - Q[L23,13] - 0.3 ell[L12,13]
+   = 0.1704227085352406
+ p_balance[3,13]: P[L23,13] - P[L34,13] - 0.12 ell[L23,13] - p_ch[3,13]
+   + p_dis[3,13] = 1.034
+ q_balance[3,13]: Q[L23,13] - Q[L34,13] - 0.25 ell[L23,13]
+   = 0.3398593647549445
+ p_balance[4,13]: P[L34,13] - P[L45,13] - 0.1 ell[L34,13] - p_ch[4,13]
+   + p_dis[4,13] = 0.72
+ q_balance[4,13]: Q[L34,13] - Q[L45,13] - 0.2 ell[L34,13]
+   = 0.2366525557287815
+ p_balance[5,13]: P[L45,13] - P[L56,13] - 0.11 ell[L45,13] - p_ch[5,13]
+   + p_dis[5,13] = 0.366
+ q_balance[5,13]: Q[L45,13] - Q[L56,13] - 0.22 ell[L45,13]
+   = 0.1202983824954639
+ p_balance[6,13]: P[L56,13] - 0.09 ell[L56,13] + p_dg[13] - p_ch[6,13]
+   + p_dis[6,13] = 0.47
+ q_balance[6,13]: Q[L56,13] - 0.18 ell[L56,13] = 0.1544815294340657
+ slack_v[14]: v[1,14] = 1
+ grid_p[14]: - P[L12,14] + p_grid[14] = 0
+ grid_q[14]: - Q[L12,14] + q_grid[14] = 0
+ voltage_drop[L12,14]: 0.002 P[L12,14] + 0.006 Q[L12,14] - v[1,14]
+   + v[2,14] - 0.001 ell[L12,14] = 0
+ voltage_drop[L23,14]: 0.0024 P[L23,14] + 0.005 Q[L23,14] - v[2,14]
+   + v[3,14] - 0.000769 ell[L23,14] = 0
+ voltage_drop[L34,14]: 0.002 P[L34,14] + 0.004 Q[L34,14] - v[3,14]
+   + v[4,14] - 0.0005 ell[L34,14] = 0
+ voltage_drop[L45,14]: 0.0022 P[L45,14] + 0.0044 Q[L45,14] - v[4,14]
+   + v[5,14] - 0.000605 ell[L45,14] = 0
+ voltage_drop[L56,14]: 0.0018 P[L56,14] + 0.0036 Q[L56,14] - v[5,14]
+   + v[6,14] - 0.000405 ell[L56,14] = 0
+ p_balance[2,14]: P[L12,14] - P[L23,14] - 0.1 ell[L12,14] = 0.5355
+ q_balance[2,14]: Q[L12,14] - Q[L23,14] - 0.3 ell[L12,14]
+   = 0.1760103383232813
+ p_balance[3,14]: P[L23,14] - P[L34,14] - 0.12 ell[L23,14] - p_ch[3,14]
+   + p_dis[3,14] = 1.023
+ q_balance[3,14]: Q[L23,14] - Q[L34,14] - 0.25 ell[L23,14]
+   = 0.3362438395979771
+ p_balance[4,14]: P[L34,14] - P[L45,14] - 0.1 ell[L34,14] - p_ch[4,14]
+   + p_dis[4,14] = 0.7125
+ q_balance[4,14]: Q[L34,14] - Q[L45,14] - 0.2 ell[L34,14]
+   = 0.23418742493994
+ p_balance[5,14]: P[L45,14] - P[L56,14] - 0.11 ell[L45,14] - p_ch[5,14]
+   + p_dis[5,14] = 0.378
+ q_balance[5,14]: Q[L45,14] - Q[L56,14] - 0.22 ell[L45,14]
+   = 0.1242425917576103
+ p_balance[6,14]: P[L56,14] - 0.09 ell[L56,14] + p_dg[14] - p_ch[6,14]
+   + p_dis[6,14] = 0.465
+ q_balance[6,14]: Q[L56,14] - 0.18 ell[L56,14] = 0.1528381089081714
+ slack_v[15]: v[1,15] = 1
+ grid_p[15]: - P[L12,15] + p_grid[15] = 0
+ grid_q[15]: - Q[L12,15] + q_grid[15] = 0
+ voltage_drop[L12,15]: 0.002 P[L12,15] + 0.006 Q[L12,15] - v[1,15]
+   + v[2,15] - 0.001 ell[L12,15] = 0
+ voltage_drop[L23,15]: 0.0024 P[L23,15] + 0.005 Q[L23,15] - v[2,15]
+   + v[3,15] - 0.000769 ell[L23,15] = 0
+ voltage_drop[L34,15]: 0.002 P[L34,15] + 0.004 Q[L34,15] - v[3,15]
+   + v[4,15] - 0.0005 ell[L34,15] = 0
+ voltage_drop[L45,15]: 0.0022 P[L45,15] + 0.0044 Q[L45,15] - v[4,15]
+   + v[5,15] - 0.000605 ell[L45,15] = 0
+ voltage_drop[L56,15]: 0.0018 P[L56,15] + 0.0036 Q[L56,15] - v[5,15]
+   + v[6,15] - 0.000405 ell[L56,15] = 0
+ p_balance[2,15]: P[L12,15] - P[L23,15] - 0.1 ell[L12,15] = 0.5865
+ q_balance[2,15]: Q[L12,15] - Q[L23,15] - 0.3 ell[L12,15]
+   = 0.1927732276874033
+ p_balance[3,15]: P[L23,15] - P[L34,15] - 0.12 ell[L23,15] - p_ch[3,15]
+   + p_dis[3,15] = 0.99
+ q_balance[3,15]: Q[L23,15] - Q[L34,15] - 0.25 ell[L23,15]
+   = 0.3253972641270746
+ p_balance[4,15]: P[L34,15] - P[L45,15] - 0.1 ell[L34,15] - p_ch[4,15]
+   + p_dis[4,15] = 0.7125
+ q_balance[4,15]: Q[L34,15] - Q[L45,15] - 0.2 ell[L34,15]
+   = 0.23418742493994
+ p_balance[5,15]: P[L45,15] - P[L56,15] - 0.11 ell[L45,15] - p_ch[5,15]
+   + p_dis[5,15] = 0.414
+ q_balance[5,15]: Q[L45,15] - Q[L56,15] - 0.22 ell[L45,15]
+   = 0.1360752195440494
+ p_balance[6,15]: P[L56,15] - 0.09 ell[L56,15] + p_dg[15] - p_ch[6,15]
+   + p_dis[6,15] = 0.45
+ q_balance[6,15]: Q[L56,15] - 0.18 ell[L56,15] = 0.1479078473304885
+ slack_v[16]: v[1,16] = 1
+ grid_p[16]: - P[L12,16] + p_grid[16] = 0
+ grid_q[16]: - Q[L12,16] + q_grid[16] = 0
+ voltage_drop[L12,16]: 0.002 P[L12,16] + 0.006 Q[L12,16] - v[1,16]
+   + v[2,16] - 0.001 ell[L12,16] = 0
+ voltage_drop[L23,16]: 0.0024 P[L23,16] + 0.005 Q[L23,16] - v[2,16]
+   + v[3,16] - 0.000769 ell[L23,16] = 0
+ voltage_drop[L34,16]: 0.002 P[L34,16] + 0.004 Q[L34,16] - v[3,16]
+   + v[4,16] - 0.0005 ell[L34,16] = 0
+ voltage_drop[L45,16]: 0.0022 P[L45,16] + 0.0044 Q[L45,16] - v[4,16]
+   + v[5,16] - 0.000605 ell[L45,16] = 0
+ voltage_drop[L56,16]: 0.0018 P[L56,16] + 0.0036 Q[L56,16] - v[5,16]
+   + v[6,16] - 0.000405 ell[L56,16] = 0
+ p_balance[2,16]: P[L12,16] - P[L23,16] - 0.1 ell[L12,16] = 0.68
+ q_balance[2,16]: Q[L12,16] - Q[L23,16] - 0.3 ell[L12,16]
+   = 0.223505191521627
+ p_balance[3,16]: P[L23,16] - P[L34,16] - 0.12 ell[L23,16] - p_ch[3,16]
+   + p_dis[3,16] = 0.902
+ q_balance[3,16]: Q[L23,16] - Q[L34,16] - 0.25 ell[L23,16]
+   = 0.2964730628713346
+ p_balance[4,16]: P[L34,16] - P[L45,16] - 0.1 ell[L34,16] - p_ch[4,16]
+   + p_dis[4,16] = 0.705
+ q_balance[4,16]: Q[L34,16] - Q[L45,16] - 0.2 ell[L34,16]
+   = 0.2317222941510986
+ p_balance[5,16]: P[L45,16] - P[L56,16] - 0.11 ell[L45,16] - p_ch[5,16]
+   + p_dis[5,16] = 0.48
+ q_balance[5,16]: Q[L45,16] - Q[L56,16] - 0.22 ell[L45,16]
+   = 0.1577683704858543
+ p_balance[6,16]: P[L56,16] - 0.09 ell[L56,16] + p_dg[16] - p_ch[6,16]
+   + p_dis[6,16] = 0.41
+ q_balance[6,16]: Q[L56,16] - 0.18 ell[L56,16] = 0.1347604831233339
+ slack_v[17]: v[1,17] = 1
+ grid_p[17]: - P[L12,17] + p_grid[17] = 0
+ grid_q[17]: - Q[L12,17] + q_grid[17] = 0
+ voltage_drop[L12,17]: 0.002 P[L12,17] + 0.006 Q[L12,17] - v[1,17]
+   + v[2,17] - 0.001 ell[L12,17] = 0
+ voltage_drop[L23,17]: 0.0024 P[L23,17] + 0.005 Q[L23,17] - v[2,17]
+   + v[3,17] - 0.000769 ell[L23,17] = 0
+ voltage_drop[L34,17]: 0.002 P[L34,17] + 0.004 Q[L34,17] - v[3,17]
+   + v[4,17] - 0.0005 ell[L34,17] = 0
+ voltage_drop[L45,17]: 0.0022 P[L45,17] + 0.0044 Q[L45,17] - v[4,17]
+   + v[5,17] - 0.000605 ell[L45,17] = 0
+ voltage_drop[L56,17]: 0.0018 P[L56,17] + 0.0036 Q[L56,17] - v[5,17]
+   + v[6,17] - 0.000405 ell[L56,17] = 0
+ p_balance[2,17]: P[L12,17] - P[L23,17] - 0.1 ell[L12,17] = 0.8075
+ q_balance[2,17]: Q[L12,17] - Q[L23,17] - 0.3 ell[L12,17]
+   = 0.265412414931932
+ p_balance[3,17]: P[L23,17] - P[L34,17] - 0.12 ell[L23,17] - p_ch[3,17]
+   + p_dis[3,17] = 0.77
+ q_balance[3,17]: Q[L23,17] - Q[L34,17] - 0.25 ell[L23,17]
+   = 0.2530867609877247
+ p_balance[4,17]: P[L34,17] - P[L45,17] - 0.1 ell[L34,17] - p_ch[4,17]
+   + p_dis[4,17] = 0.675
+ q_balance[4,17]: Q[L34,17] - Q[L45,17] - 0.2 ell[L34,17]
+   = 0.2218617709957327
+ p_balance[5,17]: P[L45,17] - P[L56,17] - 0.11 ell[L45,17] - p_ch[5,17]
+   + p_dis[5,17] = 0.57
+ q_balance[5,17]: Q[L45,17] - Q[L56,17] - 0.22 ell[L45,17]
+   = 0.187349939951952
+ p_balance[6,17]: P[L56,17] - 0.09 ell[L56,17] + p_dg[17] - p_ch[6,17]
+   + p_dis[6,17] = 0.35
+ q_balance[6,17]: Q[L56,17] - 0.18 ell[L56,17] = 0.1150394368126021
+ slack_v[18]: v[1,18] = 1
+ grid_p[18]: - P[L12,18] + p_grid[18] = 0
+ grid_q[18]: - Q[L12,18] + q_grid[18] = 0
+ voltage_drop[L12,18]: 0.002 P[L12,18] + 0.006 Q[L12,18] - v[1,18]
+   + v[2,18] - 0.001 ell[L12,18] = 0
+ voltage_drop[L23,18]: 0.0024 P[L23,18] + 0.005 Q[L23,18] - v[2,18]
+   + v[3,18] - 0.000769 ell[L23,18] = 0
+ voltage_drop[L34,18]: 0.002 P[L34,18] + 0.004 Q[L34,18] - v[3,18]
+   + v[4,18] - 0.0005 ell[L34,18] = 0
+ voltage_drop[L45,18]: 0.0022 P[L45,18] + 0.0044 Q[L45,18] - v[4,18]
+   + v[5,18] - 0.000605 ell[L45,18] = 0
+ voltage_drop[L56,18]: 0.0018 P[L56,18] + 0.0036 Q[L56,18] - v[5,18]
+   + v[6,18] - 0.000405 ell[L56,18] = 0
+ p_balance[2,18]: P[L12,18] - P[L23,18] - 0.1 ell[L12,18] = 0.85
+ q_balance[2,18]: Q[L12,18] - Q[L23,18] - 0.3 ell[L12,18]
+   = 0.2793814894020337
+ p_balance[3,18]: P[L23,18] - P[L34,18] - 0.12 ell[L23,18] - p_ch[3,18]
+   + p_dis[3,18] = 0.66
+ q_balance[3,18]: Q[L23,18] - Q[L34,18] - 0.25 ell[L23,18]
+   = 0.2169315094180497
+ p_balance[4,18]: P[L34,18] - P[L45,18] - 0.1 ell[L34,18] - p_ch[4,18]
+   + p_dis[4,18] = 0.645
+ q_balance[4,18]: Q[L34,18] - Q[L45,18] - 0.2 ell[L34,18]
+   = 0.2120012478403668
+ p_balance[5,18]: P[L45,18] - P[L56,18] - 0.11 ell[L45,18] - p_ch[5,18]
+   + p_dis[5,18] = 0.6
+ q_balance[5,18]: Q[L45,18] - Q[L56,18] - 0.22 ell[L45,18]
+   = 0.1972104631073179
+ p_balance[6,18]: P[L56,18] - 0.09 ell[L56,18] + p_dg[18] - p_ch[6,18]
+   + p_dis[6,18] = 0.3
+ q_balance[6,18]: Q[L56,18] - 0.18 ell[L56,18] = 0.098605231553659
+ slack_v[19]: v[1,19] = 1
+ grid_p[19]: - P[L12,19] + p_grid[19] = 0
+ grid_q[19]: - Q[L12,19] + q_grid[19] = 0
+ voltage_drop[L12,19]: 0.002 P[L12,19] + 0.006 Q[L12,19] - v[1,19]
+   + v[2,19] - 0.001 ell[L12,19] = 0
+ voltage_drop[L23,19]: 0.0024 P[L23,19] + 0.005 Q[L23,19] - v[2,19]
+   + v[3,19] - 0.000769 ell[L23,19] = 0
+ voltage_drop[L34,19]: 0.002 P[L34,19] + 0.004 Q[L34,19] - v[3,19]
+   + v[4,19] - 0.0005 ell[L34,19] = 0
+ voltage_drop[L45,19]: 0.0022 P[L45,19] + 0.0044 Q[L45,19] - v[4,19]
+   + v[5,19] - 0.000605 ell[L45,19] = 0
+ voltage_drop[L56,19]: 0.0018 P[L56,19] + 0.0036 Q[L56,19] - v[5,19]
+   + v[6,19] - 0.000405 ell[L56,19] = 0
+ p_balance[2,19]: P[L12,19] - P[L23,19] - 0.1 ell[L12,19] = 0.816
+ q_balance[2,19]: Q[L12,19] - Q[L23,19] - 0.3 ell[L12,19]
+   = 0.2682062298259524
+ p_balance[3,19]: P[L23,19] - P[L34,19] - 0.12 ell[L23,19] - p_ch[3,19]
+   + p_dis[3,19] = 0.572
+ q_balance[3,19]: Q[L23,19] - Q[L34,19] - 0.25 ell[L23,19]
+   = 0.1880073081623098
+ p_balance[4,19]: P[L34,19] - P[L45,19] - 0.1 ell[L34,19] - p_ch[4,19]
+   + p_dis[4,19] = 0.615
+ q_balance[4,19]: Q[L34,19] - Q[L45,19] - 0.2 ell[L34,19]
+   = 0.2021407246850009
+ p_balance[5,19]: P[L45,19] - P[L56,19] - 0.11 ell[L45,19] - p_ch[5,19]
+   + p_dis[5,19] = 0.576
+ q_balance[5,19]: Q[L45,19] - Q[L56,19] - 0.22 ell[L45,19]
+   = 0.1893220445830252
+ p_balance[6,19]: P[L56,19] - 0.09 ell[L56,19] + p_dg[19] - p_ch[6,19]
+   + p_dis[6,19] = 0.26
+ q_balance[6,19]: Q[L56,19] - 0.18 ell[L56,19] = 0.0854578673465044
+ slack_v[20]: v[1,20] = 1
+ grid_p[20]: - P[L12,20] + p_grid[20] = 0
+ grid_q[20]: - Q[L12,20] + q_grid[20] = 0
+ voltage_drop[L12,20]: 0.002 P[L12,20] + 0.006 Q[L12,20] - v[1,20]
+   + v[2,20] - 0.001 ell[L12,20] = 0
+ voltage_drop[L23,20]: 0.0024 P[L23,20] + 0.005 Q[L23,20] - v[2,20]
+   + v[3,20] - 0.000769 ell[L23,20] = 0
+ voltage_drop[L34,20]: 0.002 P[L34,20] + 0.004 Q[L34,20] - v[3,20]
+   + v[4,20] - 0.0005 ell[L34,20] = 0
+ voltage_drop[L45,20]: 0.0022 P[L45,20] + 0.0044 Q[L45,20] - v[4,20]
+   + v[5,20] - 0.000605 ell[L45,20] = 0
+ voltage_drop[L56,20]: 0.0018 P[L56,20] + 0.0036 Q[L56,20] - v[5,20]
+   + v[6,20] - 0.000405 ell[L56,20] = 0
+ p_balance[2,20]: P[L12,20] - P[L23,20] - 0.1 ell[L12,20] = 0.748
+ q_balance[2,20]: Q[L12,20] - Q[L23,20] - 0.3 ell[L12,20]
+   = 0.2458557106737897
+ p_balance[3,20]: P[L23,20] - P[L34,20] - 0.12 ell[L23,20] - p_ch[3,20]
+   + p_dis[3,20] = 0.528
+ q_balance[3,20]: Q[L23,20] - Q[L34,20] - 0.25 ell[L23,20]
+   = 0.1735452075344398
+ p_balance[4,20]: P[L34,20] - P[L45,20] - 0.1 ell[L34,20] - p_ch[4,20]
+   + p_dis[4,20] = 0.585
+ q_balance[4,20]: Q[L34,20] - Q[L45,20] - 0.2 ell[L34,20]
+   = 0.192280201529635
+ p_balance[5,20]: P[L45,20] - P[L56,20] - 0.11 ell[L45,20] - p_ch[5,20]
+   + p_dis[5,20] = 0.528
+ q_balance[5,20]: Q[L45,20] - Q[L56,20] - 0.22 ell[L45,20]
+   = 0.1735452075344397
+ p_balance[6,20]: P[L56,20] - 0.09 ell[L56,20] + p_dg[20] - p_ch[6,20]
+   + p_dis[6,20] = 0.24
+ q_balance[6,20]: Q[L56,20] - 0.18 ell[L56,20] = 0.0788841852429272
+ slack_v[21]: v[1,21] = 1
+ grid_p[21]: - P[L12,21] + p_grid[21] = 0
+ grid_q[21]: - Q[L12,21] + q_grid[21] = 0
+ voltage_drop[L12,21]: 0.002 P[L12,21] + 0.006 Q[L12,21] - v[1,21]
+   + v[2,21] - 0.001 ell[L12,21] = 0
+ voltage_drop[L23,21]: 0.0024 P[L23,21] + 0.005 Q[L23,21] - v[2,21]
+   + v[3,21] - 0.000769 ell[L23,21] = 0
+ voltage_drop[L34,21]: 0.002 P[L34,21] + 0.004 Q[L34,21] - v[3,21]
+   + v[4,21] - 0.0005 ell[L34,21] = 0
+ voltage_drop[L45,21]: 0.0022 P[L45,21] + 0.0044 Q[L45,21] - v[4,21]
+   + v[5,21] - 0.000605 ell[L45,21] = 0
+ voltage_drop[L56,21]: 0.0018 P[L56,21] + 0.0036 Q[L56,21] - v[5,21]
+   + v[6,21] - 0.000405 ell[L56,21] = 0
+ p_balance[2,21]: P[L12,21] - P[L23,21] - 0.1 ell[L12,21] = 0.6375
+ q_balance[2,21]: Q[L12,21] - Q[L23,21] - 0.3 ell[L12,21]
+   = 0.2095361170515253
+ p_balance[3,21]: P[L23,21] - P[L34,21] - 0.12 ell[L23,21] - p_ch[3,21]
+   + p_dis[3,21] = 0.484
+ q_balance[3,21]: Q[L23,21] - Q[L34,21] - 0.25 ell[L23,21]
+   = 0.1590831069065698
+ p_balance[4,21]: P[L34,21] - P[L45,21] - 0.1 ell[L34,21] - p_ch[4,21]
+   + p_dis[4,21] = 0.5625
+ q_balance[4,21]: Q[L34,21] - Q[L45,21] - 0.2 ell[L34,21]
+   = 0.1848848091631106
+ p_balance[5,21]: P[L45,21] - P[L56,21] - 0.11 ell[L45,21] - p_ch[5,21]
+   + p_dis[5,21] = 0.45
+ q_balance[5,21]: Q[L45,21] - Q[L56,21] - 0.22 ell[L45,21]
+   = 0.1479078473304884
+ p_balance[6,21]: P[L56,21] - 0.09 ell[L56,21] + p_dg[21] - p_ch[6,21]
+   + p_dis[6,21] = 0.22
+ q_balance[6,21]: Q[L56,21] - 0.18 ell[L56,21] = 0.0723105031393499
+ slack_v[22]: v[1,22] = 1
+ grid_p[22]: - P[L12,22] + p_grid[22] = 0
+ grid_q[22]: - Q[L12,22] + q_grid[22] = 0
+ voltage_drop[L12,22]: 0.002 P[L12,22] + 0.006 Q[L12,22] - v[1,22]
+   + v[2,22] - 0.001 ell[L12,22] = 0
+ voltage_drop[L23,22]: 0.0024 P[L23,22] + 0.005 Q[L23,22] - v[2,22]
+   + v[3,22] - 0.000769 ell[L23,22] = 0
+ voltage_drop[L34,22]: 0.002 P[L34,22] + 0.004 Q[L34,22] - v[3,22]
+   + v[4,22] - 0.0005 ell[L34,22] = 0
+ voltage_drop[L45,22]: 0.0022 P[L45,22] + 0.0044 Q[L45,22] - v[4,22]
+   + v[5,22] - 0.000605 ell[L45,22] = 0
+ voltage_drop[L56,22]: 0.0018 P[L56,22] + 0.0036 Q[L56,22] - v[5,22]
+   + v[6,22] - 0.000405 ell[L56,22] = 0
+ p_balance[2,22]: P[L12,22] - P[L23,22] - 0.1 ell[L12,22] = 0.51
+ q_balance[2,22]: Q[L12,22] - Q[L23,22] - 0.3 ell[L12,22]
+   = 0.1676288936412202
+ p_balance[3,22]: P[L23,22] - P[L34,22] - 0.12 ell[L23,22] - p_ch[3,22]
+   + p_dis[3,22] = 0.44
+ q_balance[3,22]: Q[L23,22] - Q[L34,22] - 0.25 ell[L23,22]
+   = 0.1446210062786998
+ p_balance[4,22]: P[L34,22] - P[L45,22] - 0.1 ell[L34,22] - p_ch[4,22]
+   + p_dis[4,22] = 0.5475
+ q_balance[4,22]: Q[L34,22] - Q[L45,22] - 0.2 ell[L34,22]
+   = 0.1799545475854276
+ p_balance[5,22]: P[L45,22] - P[L56,22] - 0.11 ell[L45,22] - p_ch[5,22]
+   + p_dis[5,22] = 0.36
+ q_balance[5,22]: Q[L45,22] - Q[L56,22] - 0.22 ell[L45,22]
+   = 0.1183262778643907
+ p_balance[6,22]: P[L56,22] - 0.09 ell[L56,22] + p_dg[22] - p_ch[6,22]
+   + p_dis[6,22] = 0.2
+ q_balance[6,22]: Q[L56,22] - 0.18 ell[L56,22] = 0.0657368210357726
+ slack_v[23]: v[1,23] = 1
+ grid_p[23]: - P[L12,23] + p_grid[23] = 0
+ grid_q[23]: - Q[L12,23] + q_grid[23] = 0
+ voltage_drop[L12,23]: 0.002 P[L12,23] + 0.006 Q[L12,23] - v[1,23]
+   + v[2,23] - 0.001 ell[L12,23] = 0
+ voltage_drop[L23,23]: 0.0024 P[L23,23] + 0.005 Q[L23,23] - v[2,23]
+   + v[3,23] - 0.000769 ell[L23,23] = 0
+ voltage_drop[L34,23]: 0.002 P[L34,23] + 0.004 Q[L34,23] - v[3,23]
+   + v[4,23] - 0.0005 ell[L34,23] = 0
+ voltage_drop[L45,23]: 0.0022 P[L45,23] + 0.0044 Q[L45,23] - v[4,23]
+   + v[5,23] - 0.000605 ell[L45,23] = 0
+ voltage_drop[L56,23]: 0.0018 P[L56,23] + 0.0036 Q[L56,23] - v[5,23]
+   + v[6,23] - 0.000405 ell[L56,23] = 0
+ p_balance[2,23]: P[L12,23] - P[L23,23] - 0.1 ell[L12,23] = 0.442
+ q_balance[2,23]: Q[L12,23] - Q[L23,23] - 0.3 ell[L12,23]
+   = 0.1452783744890575
+ p_balance[3,23]: P[L23,23] - P[L34,23] - 0.12 ell[L23,23] - p_ch[3,23]
+   + p_dis[3,23] = 0.407
+ q_balance[3,23]: Q[L23,23] - Q[L34,23] - 0.25 ell[L23,23]
+   = 0.1337744308077973
+ p_balance[4,23]: P[L34,23] - P[L45,23] - 0.1 ell[L34,23] - p_ch[4,23]
+   + p_dis[4,23] = 0.5325
+ q_balance[4,23]: Q[L34,23] - Q[L45,23] - 0.2 ell[L34,23]
+   = 0.1750242860077447
+ p_balance[5,23]: P[L45,23] - P[L56,23] - 0.11 ell[L45,23] - p_ch[5,23]
+   + p_dis[5,23] = 0.312
+ q_balance[5,23]: Q[L45,23] - Q[L56,23] - 0.22 ell[L45,23]
+   = 0.1025494408158053
+ p_balance[6,23]: P[L56,23] - 0.09 ell[L56,23] + p_dg[23] - p_ch[6,23]
+   + p_dis[6,23] = 0.185
+ q_balance[6,23]: Q[L56,23] - 0.18 ell[L56,23] = 0.0608065594580897
+ current_soc[L12,0]: [ P[L12,0] ^2 + Q[L12,0] ^2 - 100 v[1,0] * ell[L12,0]
+   ] <= 0
+ branch_soc[L12,0]: [ P[L12,0] ^2 + Q[L12,0] ^2 ] <= 36
+ current_soc[L23,0]: [ P[L23,0] ^2 + Q[L23,0] ^2 - 100 v[2,0] * ell[L23,0]
+   ] <= 0
+ branch_soc[L23,0]: [ P[L23,0] ^2 + Q[L23,0] ^2 ] <= 20.25
+ current_soc[L34,0]: [ P[L34,0] ^2 + Q[L34,0] ^2 - 100 v[3,0] * ell[L34,0]
+   ] <= 0
+ branch_soc[L34,0]: [ P[L34,0] ^2 + Q[L34,0] ^2 ] <= 16
+ current_soc[L45,0]: [ P[L45,0] ^2 + Q[L45,0] ^2 - 100 v[4,0] * ell[L45,0]
+   ] <= 0
+ branch_soc[L45,0]: [ P[L45,0] ^2 + Q[L45,0] ^2 ] <= 12.25
+ current_soc[L56,0]: [ P[L56,0] ^2 + Q[L56,0] ^2 - 100 v[5,0] * ell[L56,0]
+   ] <= 0
+ branch_soc[L56,0]: [ P[L56,0] ^2 + Q[L56,0] ^2 ] <= 9
+ current_soc[L12,1]: [ P[L12,1] ^2 + Q[L12,1] ^2 - 100 v[1,1] * ell[L12,1]
+   ] <= 0
+ branch_soc[L12,1]: [ P[L12,1] ^2 + Q[L12,1] ^2 ] <= 36
+ current_soc[L23,1]: [ P[L23,1] ^2 + Q[L23,1] ^2 - 100 v[2,1] * ell[L23,1]
+   ] <= 0
+ branch_soc[L23,1]: [ P[L23,1] ^2 + Q[L23,1] ^2 ] <= 20.25
+ current_soc[L34,1]: [ P[L34,1] ^2 + Q[L34,1] ^2 - 100 v[3,1] * ell[L34,1]
+   ] <= 0
+ branch_soc[L34,1]: [ P[L34,1] ^2 + Q[L34,1] ^2 ] <= 16
+ current_soc[L45,1]: [ P[L45,1] ^2 + Q[L45,1] ^2 - 100 v[4,1] * ell[L45,1]
+   ] <= 0
+ branch_soc[L45,1]: [ P[L45,1] ^2 + Q[L45,1] ^2 ] <= 12.25
+ current_soc[L56,1]: [ P[L56,1] ^2 + Q[L56,1] ^2 - 100 v[5,1] * ell[L56,1]
+   ] <= 0
+ branch_soc[L56,1]: [ P[L56,1] ^2 + Q[L56,1] ^2 ] <= 9
+ current_soc[L12,2]: [ P[L12,2] ^2 + Q[L12,2] ^2 - 100 v[1,2] * ell[L12,2]
+   ] <= 0
+ branch_soc[L12,2]: [ P[L12,2] ^2 + Q[L12,2] ^2 ] <= 36
+ current_soc[L23,2]: [ P[L23,2] ^2 + Q[L23,2] ^2 - 100 v[2,2] * ell[L23,2]
+   ] <= 0
+ branch_soc[L23,2]: [ P[L23,2] ^2 + Q[L23,2] ^2 ] <= 20.25
+ current_soc[L34,2]: [ P[L34,2] ^2 + Q[L34,2] ^2 - 100 v[3,2] * ell[L34,2]
+   ] <= 0
+ branch_soc[L34,2]: [ P[L34,2] ^2 + Q[L34,2] ^2 ] <= 16
+ current_soc[L45,2]: [ P[L45,2] ^2 + Q[L45,2] ^2 - 100 v[4,2] * ell[L45,2]
+   ] <= 0
+ branch_soc[L45,2]: [ P[L45,2] ^2 + Q[L45,2] ^2 ] <= 12.25
+ current_soc[L56,2]: [ P[L56,2] ^2 + Q[L56,2] ^2 - 100 v[5,2] * ell[L56,2]
+   ] <= 0
+ branch_soc[L56,2]: [ P[L56,2] ^2 + Q[L56,2] ^2 ] <= 9
+ current_soc[L12,3]: [ P[L12,3] ^2 + Q[L12,3] ^2 - 100 v[1,3] * ell[L12,3]
+   ] <= 0
+ branch_soc[L12,3]: [ P[L12,3] ^2 + Q[L12,3] ^2 ] <= 36
+ current_soc[L23,3]: [ P[L23,3] ^2 + Q[L23,3] ^2 - 100 v[2,3] * ell[L23,3]
+   ] <= 0
+ branch_soc[L23,3]: [ P[L23,3] ^2 + Q[L23,3] ^2 ] <= 20.25
+ current_soc[L34,3]: [ P[L34,3] ^2 + Q[L34,3] ^2 - 100 v[3,3] * ell[L34,3]
+   ] <= 0
+ branch_soc[L34,3]: [ P[L34,3] ^2 + Q[L34,3] ^2 ] <= 16
+ current_soc[L45,3]: [ P[L45,3] ^2 + Q[L45,3] ^2 - 100 v[4,3] * ell[L45,3]
+   ] <= 0
+ branch_soc[L45,3]: [ P[L45,3] ^2 + Q[L45,3] ^2 ] <= 12.25
+ current_soc[L56,3]: [ P[L56,3] ^2 + Q[L56,3] ^2 - 100 v[5,3] * ell[L56,3]
+   ] <= 0
+ branch_soc[L56,3]: [ P[L56,3] ^2 + Q[L56,3] ^2 ] <= 9
+ current_soc[L12,4]: [ P[L12,4] ^2 + Q[L12,4] ^2 - 100 v[1,4] * ell[L12,4]
+   ] <= 0
+ branch_soc[L12,4]: [ P[L12,4] ^2 + Q[L12,4] ^2 ] <= 36
+ current_soc[L23,4]: [ P[L23,4] ^2 + Q[L23,4] ^2 - 100 v[2,4] * ell[L23,4]
+   ] <= 0
+ branch_soc[L23,4]: [ P[L23,4] ^2 + Q[L23,4] ^2 ] <= 20.25
+ current_soc[L34,4]: [ P[L34,4] ^2 + Q[L34,4] ^2 - 100 v[3,4] * ell[L34,4]
+   ] <= 0
+ branch_soc[L34,4]: [ P[L34,4] ^2 + Q[L34,4] ^2 ] <= 16
+ current_soc[L45,4]: [ P[L45,4] ^2 + Q[L45,4] ^2 - 100 v[4,4] * ell[L45,4]
+   ] <= 0
+ branch_soc[L45,4]: [ P[L45,4] ^2 + Q[L45,4] ^2 ] <= 12.25
+ current_soc[L56,4]: [ P[L56,4] ^2 + Q[L56,4] ^2 - 100 v[5,4] * ell[L56,4]
+   ] <= 0
+ branch_soc[L56,4]: [ P[L56,4] ^2 + Q[L56,4] ^2 ] <= 9
+ current_soc[L12,5]: [ P[L12,5] ^2 + Q[L12,5] ^2 - 100 v[1,5] * ell[L12,5]
+   ] <= 0
+ branch_soc[L12,5]: [ P[L12,5] ^2 + Q[L12,5] ^2 ] <= 36
+ current_soc[L23,5]: [ P[L23,5] ^2 + Q[L23,5] ^2 - 100 v[2,5] * ell[L23,5]
+   ] <= 0
+ branch_soc[L23,5]: [ P[L23,5] ^2 + Q[L23,5] ^2 ] <= 20.25
+ current_soc[L34,5]: [ P[L34,5] ^2 + Q[L34,5] ^2 - 100 v[3,5] * ell[L34,5]
+   ] <= 0
+ branch_soc[L34,5]: [ P[L34,5] ^2 + Q[L34,5] ^2 ] <= 16
+ current_soc[L45,5]: [ P[L45,5] ^2 + Q[L45,5] ^2 - 100 v[4,5] * ell[L45,5]
+   ] <= 0
+ branch_soc[L45,5]: [ P[L45,5] ^2 + Q[L45,5] ^2 ] <= 12.25
+ current_soc[L56,5]: [ P[L56,5] ^2 + Q[L56,5] ^2 - 100 v[5,5] * ell[L56,5]
+   ] <= 0
+ branch_soc[L56,5]: [ P[L56,5] ^2 + Q[L56,5] ^2 ] <= 9
+ current_soc[L12,6]: [ P[L12,6] ^2 + Q[L12,6] ^2 - 100 v[1,6] * ell[L12,6]
+   ] <= 0
+ branch_soc[L12,6]: [ P[L12,6] ^2 + Q[L12,6] ^2 ] <= 36
+ current_soc[L23,6]: [ P[L23,6] ^2 + Q[L23,6] ^2 - 100 v[2,6] * ell[L23,6]
+   ] <= 0
+ branch_soc[L23,6]: [ P[L23,6] ^2 + Q[L23,6] ^2 ] <= 20.25
+ current_soc[L34,6]: [ P[L34,6] ^2 + Q[L34,6] ^2 - 100 v[3,6] * ell[L34,6]
+   ] <= 0
+ branch_soc[L34,6]: [ P[L34,6] ^2 + Q[L34,6] ^2 ] <= 16
+ current_soc[L45,6]: [ P[L45,6] ^2 + Q[L45,6] ^2 - 100 v[4,6] * ell[L45,6]
+   ] <= 0
+ branch_soc[L45,6]: [ P[L45,6] ^2 + Q[L45,6] ^2 ] <= 12.25
+ current_soc[L56,6]: [ P[L56,6] ^2 + Q[L56,6] ^2 - 100 v[5,6] * ell[L56,6]
+   ] <= 0
+ branch_soc[L56,6]: [ P[L56,6] ^2 + Q[L56,6] ^2 ] <= 9
+ current_soc[L12,7]: [ P[L12,7] ^2 + Q[L12,7] ^2 - 100 v[1,7] * ell[L12,7]
+   ] <= 0
+ branch_soc[L12,7]: [ P[L12,7] ^2 + Q[L12,7] ^2 ] <= 36
+ current_soc[L23,7]: [ P[L23,7] ^2 + Q[L23,7] ^2 - 100 v[2,7] * ell[L23,7]
+   ] <= 0
+ branch_soc[L23,7]: [ P[L23,7] ^2 + Q[L23,7] ^2 ] <= 20.25
+ current_soc[L34,7]: [ P[L34,7] ^2 + Q[L34,7] ^2 - 100 v[3,7] * ell[L34,7]
+   ] <= 0
+ branch_soc[L34,7]: [ P[L34,7] ^2 + Q[L34,7] ^2 ] <= 16
+ current_soc[L45,7]: [ P[L45,7] ^2 + Q[L45,7] ^2 - 100 v[4,7] * ell[L45,7]
+   ] <= 0
+ branch_soc[L45,7]: [ P[L45,7] ^2 + Q[L45,7] ^2 ] <= 12.25
+ current_soc[L56,7]: [ P[L56,7] ^2 + Q[L56,7] ^2 - 100 v[5,7] * ell[L56,7]
+   ] <= 0
+ branch_soc[L56,7]: [ P[L56,7] ^2 + Q[L56,7] ^2 ] <= 9
+ current_soc[L12,8]: [ P[L12,8] ^2 + Q[L12,8] ^2 - 100 v[1,8] * ell[L12,8]
+   ] <= 0
+ branch_soc[L12,8]: [ P[L12,8] ^2 + Q[L12,8] ^2 ] <= 36
+ current_soc[L23,8]: [ P[L23,8] ^2 + Q[L23,8] ^2 - 100 v[2,8] * ell[L23,8]
+   ] <= 0
+ branch_soc[L23,8]: [ P[L23,8] ^2 + Q[L23,8] ^2 ] <= 20.25
+ current_soc[L34,8]: [ P[L34,8] ^2 + Q[L34,8] ^2 - 100 v[3,8] * ell[L34,8]
+   ] <= 0
+ branch_soc[L34,8]: [ P[L34,8] ^2 + Q[L34,8] ^2 ] <= 16
+ current_soc[L45,8]: [ P[L45,8] ^2 + Q[L45,8] ^2 - 100 v[4,8] * ell[L45,8]
+   ] <= 0
+ branch_soc[L45,8]: [ P[L45,8] ^2 + Q[L45,8] ^2 ] <= 12.25
+ current_soc[L56,8]: [ P[L56,8] ^2 + Q[L56,8] ^2 - 100 v[5,8] * ell[L56,8]
+   ] <= 0
+ branch_soc[L56,8]: [ P[L56,8] ^2 + Q[L56,8] ^2 ] <= 9
+ current_soc[L12,9]: [ P[L12,9] ^2 + Q[L12,9] ^2 - 100 v[1,9] * ell[L12,9]
+   ] <= 0
+ branch_soc[L12,9]: [ P[L12,9] ^2 + Q[L12,9] ^2 ] <= 36
+ current_soc[L23,9]: [ P[L23,9] ^2 + Q[L23,9] ^2 - 100 v[2,9] * ell[L23,9]
+   ] <= 0
+ branch_soc[L23,9]: [ P[L23,9] ^2 + Q[L23,9] ^2 ] <= 20.25
+ current_soc[L34,9]: [ P[L34,9] ^2 + Q[L34,9] ^2 - 100 v[3,9] * ell[L34,9]
+   ] <= 0
+ branch_soc[L34,9]: [ P[L34,9] ^2 + Q[L34,9] ^2 ] <= 16
+ current_soc[L45,9]: [ P[L45,9] ^2 + Q[L45,9] ^2 - 100 v[4,9] * ell[L45,9]
+   ] <= 0
+ branch_soc[L45,9]: [ P[L45,9] ^2 + Q[L45,9] ^2 ] <= 12.25
+ current_soc[L56,9]: [ P[L56,9] ^2 + Q[L56,9] ^2 - 100 v[5,9] * ell[L56,9]
+   ] <= 0
+ branch_soc[L56,9]: [ P[L56,9] ^2 + Q[L56,9] ^2 ] <= 9
+ current_soc[L12,10]: [ P[L12,10] ^2 + Q[L12,10] ^2
+   - 100 v[1,10] * ell[L12,10] ] <= 0
+ branch_soc[L12,10]: [ P[L12,10] ^2 + Q[L12,10] ^2 ] <= 36
+ current_soc[L23,10]: [ P[L23,10] ^2 + Q[L23,10] ^2
+   - 100 v[2,10] * ell[L23,10] ] <= 0
+ branch_soc[L23,10]: [ P[L23,10] ^2 + Q[L23,10] ^2 ] <= 20.25
+ current_soc[L34,10]: [ P[L34,10] ^2 + Q[L34,10] ^2
+   - 100 v[3,10] * ell[L34,10] ] <= 0
+ branch_soc[L34,10]: [ P[L34,10] ^2 + Q[L34,10] ^2 ] <= 16
+ current_soc[L45,10]: [ P[L45,10] ^2 + Q[L45,10] ^2
+   - 100 v[4,10] * ell[L45,10] ] <= 0
+ branch_soc[L45,10]: [ P[L45,10] ^2 + Q[L45,10] ^2 ] <= 12.25
+ current_soc[L56,10]: [ P[L56,10] ^2 + Q[L56,10] ^2
+   - 100 v[5,10] * ell[L56,10] ] <= 0
+ branch_soc[L56,10]: [ P[L56,10] ^2 + Q[L56,10] ^2 ] <= 9
+ current_soc[L12,11]: [ P[L12,11] ^2 + Q[L12,11] ^2
+   - 100 v[1,11] * ell[L12,11] ] <= 0
+ branch_soc[L12,11]: [ P[L12,11] ^2 + Q[L12,11] ^2 ] <= 36
+ current_soc[L23,11]: [ P[L23,11] ^2 + Q[L23,11] ^2
+   - 100 v[2,11] * ell[L23,11] ] <= 0
+ branch_soc[L23,11]: [ P[L23,11] ^2 + Q[L23,11] ^2 ] <= 20.25
+ current_soc[L34,11]: [ P[L34,11] ^2 + Q[L34,11] ^2
+   - 100 v[3,11] * ell[L34,11] ] <= 0
+ branch_soc[L34,11]: [ P[L34,11] ^2 + Q[L34,11] ^2 ] <= 16
+ current_soc[L45,11]: [ P[L45,11] ^2 + Q[L45,11] ^2
+   - 100 v[4,11] * ell[L45,11] ] <= 0
+ branch_soc[L45,11]: [ P[L45,11] ^2 + Q[L45,11] ^2 ] <= 12.25
+ current_soc[L56,11]: [ P[L56,11] ^2 + Q[L56,11] ^2
+   - 100 v[5,11] * ell[L56,11] ] <= 0
+ branch_soc[L56,11]: [ P[L56,11] ^2 + Q[L56,11] ^2 ] <= 9
+ current_soc[L12,12]: [ P[L12,12] ^2 + Q[L12,12] ^2
+   - 100 v[1,12] * ell[L12,12] ] <= 0
+ branch_soc[L12,12]: [ P[L12,12] ^2 + Q[L12,12] ^2 ] <= 36
+ current_soc[L23,12]: [ P[L23,12] ^2 + Q[L23,12] ^2
+   - 100 v[2,12] * ell[L23,12] ] <= 0
+ branch_soc[L23,12]: [ P[L23,12] ^2 + Q[L23,12] ^2 ] <= 20.25
+ current_soc[L34,12]: [ P[L34,12] ^2 + Q[L34,12] ^2
+   - 100 v[3,12] * ell[L34,12] ] <= 0
+ branch_soc[L34,12]: [ P[L34,12] ^2 + Q[L34,12] ^2 ] <= 16
+ current_soc[L45,12]: [ P[L45,12] ^2 + Q[L45,12] ^2
+   - 100 v[4,12] * ell[L45,12] ] <= 0
+ branch_soc[L45,12]: [ P[L45,12] ^2 + Q[L45,12] ^2 ] <= 12.25
+ current_soc[L56,12]: [ P[L56,12] ^2 + Q[L56,12] ^2
+   - 100 v[5,12] * ell[L56,12] ] <= 0
+ branch_soc[L56,12]: [ P[L56,12] ^2 + Q[L56,12] ^2 ] <= 9
+ current_soc[L12,13]: [ P[L12,13] ^2 + Q[L12,13] ^2
+   - 100 v[1,13] * ell[L12,13] ] <= 0
+ branch_soc[L12,13]: [ P[L12,13] ^2 + Q[L12,13] ^2 ] <= 36
+ current_soc[L23,13]: [ P[L23,13] ^2 + Q[L23,13] ^2
+   - 100 v[2,13] * ell[L23,13] ] <= 0
+ branch_soc[L23,13]: [ P[L23,13] ^2 + Q[L23,13] ^2 ] <= 20.25
+ current_soc[L34,13]: [ P[L34,13] ^2 + Q[L34,13] ^2
+   - 100 v[3,13] * ell[L34,13] ] <= 0
+ branch_soc[L34,13]: [ P[L34,13] ^2 + Q[L34,13] ^2 ] <= 16
+ current_soc[L45,13]: [ P[L45,13] ^2 + Q[L45,13] ^2
+   - 100 v[4,13] * ell[L45,13] ] <= 0
+ branch_soc[L45,13]: [ P[L45,13] ^2 + Q[L45,13] ^2 ] <= 12.25
+ current_soc[L56,13]: [ P[L56,13] ^2 + Q[L56,13] ^2
+   - 100 v[5,13] * ell[L56,13] ] <= 0
+ branch_soc[L56,13]: [ P[L56,13] ^2 + Q[L56,13] ^2 ] <= 9
+ current_soc[L12,14]: [ P[L12,14] ^2 + Q[L12,14] ^2
+   - 100 v[1,14] * ell[L12,14] ] <= 0
+ branch_soc[L12,14]: [ P[L12,14] ^2 + Q[L12,14] ^2 ] <= 36
+ current_soc[L23,14]: [ P[L23,14] ^2 + Q[L23,14] ^2
+   - 100 v[2,14] * ell[L23,14] ] <= 0
+ branch_soc[L23,14]: [ P[L23,14] ^2 + Q[L23,14] ^2 ] <= 20.25
+ current_soc[L34,14]: [ P[L34,14] ^2 + Q[L34,14] ^2
+   - 100 v[3,14] * ell[L34,14] ] <= 0
+ branch_soc[L34,14]: [ P[L34,14] ^2 + Q[L34,14] ^2 ] <= 16
+ current_soc[L45,14]: [ P[L45,14] ^2 + Q[L45,14] ^2
+   - 100 v[4,14] * ell[L45,14] ] <= 0
+ branch_soc[L45,14]: [ P[L45,14] ^2 + Q[L45,14] ^2 ] <= 12.25
+ current_soc[L56,14]: [ P[L56,14] ^2 + Q[L56,14] ^2
+   - 100 v[5,14] * ell[L56,14] ] <= 0
+ branch_soc[L56,14]: [ P[L56,14] ^2 + Q[L56,14] ^2 ] <= 9
+ current_soc[L12,15]: [ P[L12,15] ^2 + Q[L12,15] ^2
+   - 100 v[1,15] * ell[L12,15] ] <= 0
+ branch_soc[L12,15]: [ P[L12,15] ^2 + Q[L12,15] ^2 ] <= 36
+ current_soc[L23,15]: [ P[L23,15] ^2 + Q[L23,15] ^2
+   - 100 v[2,15] * ell[L23,15] ] <= 0
+ branch_soc[L23,15]: [ P[L23,15] ^2 + Q[L23,15] ^2 ] <= 20.25
+ current_soc[L34,15]: [ P[L34,15] ^2 + Q[L34,15] ^2
+   - 100 v[3,15] * ell[L34,15] ] <= 0
+ branch_soc[L34,15]: [ P[L34,15] ^2 + Q[L34,15] ^2 ] <= 16
+ current_soc[L45,15]: [ P[L45,15] ^2 + Q[L45,15] ^2
+   - 100 v[4,15] * ell[L45,15] ] <= 0
+ branch_soc[L45,15]: [ P[L45,15] ^2 + Q[L45,15] ^2 ] <= 12.25
+ current_soc[L56,15]: [ P[L56,15] ^2 + Q[L56,15] ^2
+   - 100 v[5,15] * ell[L56,15] ] <= 0
+ branch_soc[L56,15]: [ P[L56,15] ^2 + Q[L56,15] ^2 ] <= 9
+ current_soc[L12,16]: [ P[L12,16] ^2 + Q[L12,16] ^2
+   - 100 v[1,16] * ell[L12,16] ] <= 0
+ branch_soc[L12,16]: [ P[L12,16] ^2 + Q[L12,16] ^2 ] <= 36
+ current_soc[L23,16]: [ P[L23,16] ^2 + Q[L23,16] ^2
+   - 100 v[2,16] * ell[L23,16] ] <= 0
+ branch_soc[L23,16]: [ P[L23,16] ^2 + Q[L23,16] ^2 ] <= 20.25
+ current_soc[L34,16]: [ P[L34,16] ^2 + Q[L34,16] ^2
+   - 100 v[3,16] * ell[L34,16] ] <= 0
+ branch_soc[L34,16]: [ P[L34,16] ^2 + Q[L34,16] ^2 ] <= 16
+ current_soc[L45,16]: [ P[L45,16] ^2 + Q[L45,16] ^2
+   - 100 v[4,16] * ell[L45,16] ] <= 0
+ branch_soc[L45,16]: [ P[L45,16] ^2 + Q[L45,16] ^2 ] <= 12.25
+ current_soc[L56,16]: [ P[L56,16] ^2 + Q[L56,16] ^2
+   - 100 v[5,16] * ell[L56,16] ] <= 0
+ branch_soc[L56,16]: [ P[L56,16] ^2 + Q[L56,16] ^2 ] <= 9
+ current_soc[L12,17]: [ P[L12,17] ^2 + Q[L12,17] ^2
+   - 100 v[1,17] * ell[L12,17] ] <= 0
+ branch_soc[L12,17]: [ P[L12,17] ^2 + Q[L12,17] ^2 ] <= 36
+ current_soc[L23,17]: [ P[L23,17] ^2 + Q[L23,17] ^2
+   - 100 v[2,17] * ell[L23,17] ] <= 0
+ branch_soc[L23,17]: [ P[L23,17] ^2 + Q[L23,17] ^2 ] <= 20.25
+ current_soc[L34,17]: [ P[L34,17] ^2 + Q[L34,17] ^2
+   - 100 v[3,17] * ell[L34,17] ] <= 0
+ branch_soc[L34,17]: [ P[L34,17] ^2 + Q[L34,17] ^2 ] <= 16
+ current_soc[L45,17]: [ P[L45,17] ^2 + Q[L45,17] ^2
+   - 100 v[4,17] * ell[L45,17] ] <= 0
+ branch_soc[L45,17]: [ P[L45,17] ^2 + Q[L45,17] ^2 ] <= 12.25
+ current_soc[L56,17]: [ P[L56,17] ^2 + Q[L56,17] ^2
+   - 100 v[5,17] * ell[L56,17] ] <= 0
+ branch_soc[L56,17]: [ P[L56,17] ^2 + Q[L56,17] ^2 ] <= 9
+ current_soc[L12,18]: [ P[L12,18] ^2 + Q[L12,18] ^2
+   - 100 v[1,18] * ell[L12,18] ] <= 0
+ branch_soc[L12,18]: [ P[L12,18] ^2 + Q[L12,18] ^2 ] <= 36
+ current_soc[L23,18]: [ P[L23,18] ^2 + Q[L23,18] ^2
+   - 100 v[2,18] * ell[L23,18] ] <= 0
+ branch_soc[L23,18]: [ P[L23,18] ^2 + Q[L23,18] ^2 ] <= 20.25
+ current_soc[L34,18]: [ P[L34,18] ^2 + Q[L34,18] ^2
+   - 100 v[3,18] * ell[L34,18] ] <= 0
+ branch_soc[L34,18]: [ P[L34,18] ^2 + Q[L34,18] ^2 ] <= 16
+ current_soc[L45,18]: [ P[L45,18] ^2 + Q[L45,18] ^2
+   - 100 v[4,18] * ell[L45,18] ] <= 0
+ branch_soc[L45,18]: [ P[L45,18] ^2 + Q[L45,18] ^2 ] <= 12.25
+ current_soc[L56,18]: [ P[L56,18] ^2 + Q[L56,18] ^2
+   - 100 v[5,18] * ell[L56,18] ] <= 0
+ branch_soc[L56,18]: [ P[L56,18] ^2 + Q[L56,18] ^2 ] <= 9
+ current_soc[L12,19]: [ P[L12,19] ^2 + Q[L12,19] ^2
+   - 100 v[1,19] * ell[L12,19] ] <= 0
+ branch_soc[L12,19]: [ P[L12,19] ^2 + Q[L12,19] ^2 ] <= 36
+ current_soc[L23,19]: [ P[L23,19] ^2 + Q[L23,19] ^2
+   - 100 v[2,19] * ell[L23,19] ] <= 0
+ branch_soc[L23,19]: [ P[L23,19] ^2 + Q[L23,19] ^2 ] <= 20.25
+ current_soc[L34,19]: [ P[L34,19] ^2 + Q[L34,19] ^2
+   - 100 v[3,19] * ell[L34,19] ] <= 0
+ branch_soc[L34,19]: [ P[L34,19] ^2 + Q[L34,19] ^2 ] <= 16
+ current_soc[L45,19]: [ P[L45,19] ^2 + Q[L45,19] ^2
+   - 100 v[4,19] * ell[L45,19] ] <= 0
+ branch_soc[L45,19]: [ P[L45,19] ^2 + Q[L45,19] ^2 ] <= 12.25
+ current_soc[L56,19]: [ P[L56,19] ^2 + Q[L56,19] ^2
+   - 100 v[5,19] * ell[L56,19] ] <= 0
+ branch_soc[L56,19]: [ P[L56,19] ^2 + Q[L56,19] ^2 ] <= 9
+ current_soc[L12,20]: [ P[L12,20] ^2 + Q[L12,20] ^2
+   - 100 v[1,20] * ell[L12,20] ] <= 0
+ branch_soc[L12,20]: [ P[L12,20] ^2 + Q[L12,20] ^2 ] <= 36
+ current_soc[L23,20]: [ P[L23,20] ^2 + Q[L23,20] ^2
+   - 100 v[2,20] * ell[L23,20] ] <= 0
+ branch_soc[L23,20]: [ P[L23,20] ^2 + Q[L23,20] ^2 ] <= 20.25
+ current_soc[L34,20]: [ P[L34,20] ^2 + Q[L34,20] ^2
+   - 100 v[3,20] * ell[L34,20] ] <= 0
+ branch_soc[L34,20]: [ P[L34,20] ^2 + Q[L34,20] ^2 ] <= 16
+ current_soc[L45,20]: [ P[L45,20] ^2 + Q[L45,20] ^2
+   - 100 v[4,20] * ell[L45,20] ] <= 0
+ branch_soc[L45,20]: [ P[L45,20] ^2 + Q[L45,20] ^2 ] <= 12.25
+ current_soc[L56,20]: [ P[L56,20] ^2 + Q[L56,20] ^2
+   - 100 v[5,20] * ell[L56,20] ] <= 0
+ branch_soc[L56,20]: [ P[L56,20] ^2 + Q[L56,20] ^2 ] <= 9
+ current_soc[L12,21]: [ P[L12,21] ^2 + Q[L12,21] ^2
+   - 100 v[1,21] * ell[L12,21] ] <= 0
+ branch_soc[L12,21]: [ P[L12,21] ^2 + Q[L12,21] ^2 ] <= 36
+ current_soc[L23,21]: [ P[L23,21] ^2 + Q[L23,21] ^2
+   - 100 v[2,21] * ell[L23,21] ] <= 0
+ branch_soc[L23,21]: [ P[L23,21] ^2 + Q[L23,21] ^2 ] <= 20.25
+ current_soc[L34,21]: [ P[L34,21] ^2 + Q[L34,21] ^2
+   - 100 v[3,21] * ell[L34,21] ] <= 0
+ branch_soc[L34,21]: [ P[L34,21] ^2 + Q[L34,21] ^2 ] <= 16
+ current_soc[L45,21]: [ P[L45,21] ^2 + Q[L45,21] ^2
+   - 100 v[4,21] * ell[L45,21] ] <= 0
+ branch_soc[L45,21]: [ P[L45,21] ^2 + Q[L45,21] ^2 ] <= 12.25
+ current_soc[L56,21]: [ P[L56,21] ^2 + Q[L56,21] ^2
+   - 100 v[5,21] * ell[L56,21] ] <= 0
+ branch_soc[L56,21]: [ P[L56,21] ^2 + Q[L56,21] ^2 ] <= 9
+ current_soc[L12,22]: [ P[L12,22] ^2 + Q[L12,22] ^2
+   - 100 v[1,22] * ell[L12,22] ] <= 0
+ branch_soc[L12,22]: [ P[L12,22] ^2 + Q[L12,22] ^2 ] <= 36
+ current_soc[L23,22]: [ P[L23,22] ^2 + Q[L23,22] ^2
+   - 100 v[2,22] * ell[L23,22] ] <= 0
+ branch_soc[L23,22]: [ P[L23,22] ^2 + Q[L23,22] ^2 ] <= 20.25
+ current_soc[L34,22]: [ P[L34,22] ^2 + Q[L34,22] ^2
+   - 100 v[3,22] * ell[L34,22] ] <= 0
+ branch_soc[L34,22]: [ P[L34,22] ^2 + Q[L34,22] ^2 ] <= 16
+ current_soc[L45,22]: [ P[L45,22] ^2 + Q[L45,22] ^2
+   - 100 v[4,22] * ell[L45,22] ] <= 0
+ branch_soc[L45,22]: [ P[L45,22] ^2 + Q[L45,22] ^2 ] <= 12.25
+ current_soc[L56,22]: [ P[L56,22] ^2 + Q[L56,22] ^2
+   - 100 v[5,22] * ell[L56,22] ] <= 0
+ branch_soc[L56,22]: [ P[L56,22] ^2 + Q[L56,22] ^2 ] <= 9
+ current_soc[L12,23]: [ P[L12,23] ^2 + Q[L12,23] ^2
+   - 100 v[1,23] * ell[L12,23] ] <= 0
+ branch_soc[L12,23]: [ P[L12,23] ^2 + Q[L12,23] ^2 ] <= 36
+ current_soc[L23,23]: [ P[L23,23] ^2 + Q[L23,23] ^2
+   - 100 v[2,23] * ell[L23,23] ] <= 0
+ branch_soc[L23,23]: [ P[L23,23] ^2 + Q[L23,23] ^2 ] <= 20.25
+ current_soc[L34,23]: [ P[L34,23] ^2 + Q[L34,23] ^2
+   - 100 v[3,23] * ell[L34,23] ] <= 0
+ branch_soc[L34,23]: [ P[L34,23] ^2 + Q[L34,23] ^2 ] <= 16
+ current_soc[L45,23]: [ P[L45,23] ^2 + Q[L45,23] ^2
+   - 100 v[4,23] * ell[L45,23] ] <= 0
+ branch_soc[L45,23]: [ P[L45,23] ^2 + Q[L45,23] ^2 ] <= 12.25
+ current_soc[L56,23]: [ P[L56,23] ^2 + Q[L56,23] ^2
+   - 100 v[5,23] * ell[L56,23] ] <= 0
+ branch_soc[L56,23]: [ P[L56,23] ^2 + Q[L56,23] ^2 ] <= 9
+Bounds
+ P[L12,0] free
+ P[L12,1] free
+ P[L12,2] free
+ P[L12,3] free
+ P[L12,4] free
+ P[L12,5] free
+ P[L12,6] free
+ P[L12,7] free
+ P[L12,8] free
+ P[L12,9] free
+ P[L12,10] free
+ P[L12,11] free
+ P[L12,12] free
+ P[L12,13] free
+ P[L12,14] free
+ P[L12,15] free
+ P[L12,16] free
+ P[L12,17] free
+ P[L12,18] free
+ P[L12,19] free
+ P[L12,20] free
+ P[L12,21] free
+ P[L12,22] free
+ P[L12,23] free
+ P[L23,0] free
+ P[L23,1] free
+ P[L23,2] free
+ P[L23,3] free
+ P[L23,4] free
+ P[L23,5] free
+ P[L23,6] free
+ P[L23,7] free
+ P[L23,8] free
+ P[L23,9] free
+ P[L23,10] free
+ P[L23,11] free
+ P[L23,12] free
+ P[L23,13] free
+ P[L23,14] free
+ P[L23,15] free
+ P[L23,16] free
+ P[L23,17] free
+ P[L23,18] free
+ P[L23,19] free
+ P[L23,20] free
+ P[L23,21] free
+ P[L23,22] free
+ P[L23,23] free
+ P[L34,0] free
+ P[L34,1] free
+ P[L34,2] free
+ P[L34,3] free
+ P[L34,4] free
+ P[L34,5] free
+ P[L34,6] free
+ P[L34,7] free
+ P[L34,8] free
+ P[L34,9] free
+ P[L34,10] free
+ P[L34,11] free
+ P[L34,12] free
+ P[L34,13] free
+ P[L34,14] free
+ P[L34,15] free
+ P[L34,16] free
+ P[L34,17] free
+ P[L34,18] free
+ P[L34,19] free
+ P[L34,20] free
+ P[L34,21] free
+ P[L34,22] free
+ P[L34,23] free
+ P[L45,0] free
+ P[L45,1] free
+ P[L45,2] free
+ P[L45,3] free
+ P[L45,4] free
+ P[L45,5] free
+ P[L45,6] free
+ P[L45,7] free
+ P[L45,8] free
+ P[L45,9] free
+ P[L45,10] free
+ P[L45,11] free
+ P[L45,12] free
+ P[L45,13] free
+ P[L45,14] free
+ P[L45,15] free
+ P[L45,16] free
+ P[L45,17] free
+ P[L45,18] free
+ P[L45,19] free
+ P[L45,20] free
+ P[L45,21] free
+ P[L45,22] free
+ P[L45,23] free
+ P[L56,0] free
+ P[L56,1] free
+ P[L56,2] free
+ P[L56,3] free
+ P[L56,4] free
+ P[L56,5] free
+ P[L56,6] free
+ P[L56,7] free
+ P[L56,8] free
+ P[L56,9] free
+ P[L56,10] free
+ P[L56,11] free
+ P[L56,12] free
+ P[L56,13] free
+ P[L56,14] free
+ P[L56,15] free
+ P[L56,16] free
+ P[L56,17] free
+ P[L56,18] free
+ P[L56,19] free
+ P[L56,20] free
+ P[L56,21] free
+ P[L56,22] free
+ P[L56,23] free
+ Q[L12,0] free
+ Q[L12,1] free
+ Q[L12,2] free
+ Q[L12,3] free
+ Q[L12,4] free
+ Q[L12,5] free
+ Q[L12,6] free
+ Q[L12,7] free
+ Q[L12,8] free
+ Q[L12,9] free
+ Q[L12,10] free
+ Q[L12,11] free
+ Q[L12,12] free
+ Q[L12,13] free
+ Q[L12,14] free
+ Q[L12,15] free
+ Q[L12,16] free
+ Q[L12,17] free
+ Q[L12,18] free
+ Q[L12,19] free
+ Q[L12,20] free
+ Q[L12,21] free
+ Q[L12,22] free
+ Q[L12,23] free
+ Q[L23,0] free
+ Q[L23,1] free
+ Q[L23,2] free
+ Q[L23,3] free
+ Q[L23,4] free
+ Q[L23,5] free
+ Q[L23,6] free
+ Q[L23,7] free
+ Q[L23,8] free
+ Q[L23,9] free
+ Q[L23,10] free
+ Q[L23,11] free
+ Q[L23,12] free
+ Q[L23,13] free
+ Q[L23,14] free
+ Q[L23,15] free
+ Q[L23,16] free
+ Q[L23,17] free
+ Q[L23,18] free
+ Q[L23,19] free
+ Q[L23,20] free
+ Q[L23,21] free
+ Q[L23,22] free
+ Q[L23,23] free
+ Q[L34,0] free
+ Q[L34,1] free
+ Q[L34,2] free
+ Q[L34,3] free
+ Q[L34,4] free
+ Q[L34,5] free
+ Q[L34,6] free
+ Q[L34,7] free
+ Q[L34,8] free
+ Q[L34,9] free
+ Q[L34,10] free
+ Q[L34,11] free
+ Q[L34,12] free
+ Q[L34,13] free
+ Q[L34,14] free
+ Q[L34,15] free
+ Q[L34,16] free
+ Q[L34,17] free
+ Q[L34,18] free
+ Q[L34,19] free
+ Q[L34,20] free
+ Q[L34,21] free
+ Q[L34,22] free
+ Q[L34,23] free
+ Q[L45,0] free
+ Q[L45,1] free
+ Q[L45,2] free
+ Q[L45,3] free
+ Q[L45,4] free
+ Q[L45,5] free
+ Q[L45,6] free
+ Q[L45,7] free
+ Q[L45,8] free
+ Q[L45,9] free
+ Q[L45,10] free
+ Q[L45,11] free
+ Q[L45,12] free
+ Q[L45,13] free
+ Q[L45,14] free
+ Q[L45,15] free
+ Q[L45,16] free
+ Q[L45,17] free
+ Q[L45,18] free
+ Q[L45,19] free
+ Q[L45,20] free
+ Q[L45,21] free
+ Q[L45,22] free
+ Q[L45,23] free
+ Q[L56,0] free
+ Q[L56,1] free
+ Q[L56,2] free
+ Q[L56,3] free
+ Q[L56,4] free
+ Q[L56,5] free
+ Q[L56,6] free
+ Q[L56,7] free
+ Q[L56,8] free
+ Q[L56,9] free
+ Q[L56,10] free
+ Q[L56,11] free
+ Q[L56,12] free
+ Q[L56,13] free
+ Q[L56,14] free
+ Q[L56,15] free
+ Q[L56,16] free
+ Q[L56,17] free
+ Q[L56,18] free
+ Q[L56,19] free
+ Q[L56,20] free
+ Q[L56,21] free
+ Q[L56,22] free
+ Q[L56,23] free
+ 0.9025 <= v[1,0] <= 1.1025
+ 0.9025 <= v[1,1] <= 1.1025
+ 0.9025 <= v[1,2] <= 1.1025
+ 0.9025 <= v[1,3] <= 1.1025
+ 0.9025 <= v[1,4] <= 1.1025
+ 0.9025 <= v[1,5] <= 1.1025
+ 0.9025 <= v[1,6] <= 1.1025
+ 0.9025 <= v[1,7] <= 1.1025
+ 0.9025 <= v[1,8] <= 1.1025
+ 0.9025 <= v[1,9] <= 1.1025
+ 0.9025 <= v[1,10] <= 1.1025
+ 0.9025 <= v[1,11] <= 1.1025
+ 0.9025 <= v[1,12] <= 1.1025
+ 0.9025 <= v[1,13] <= 1.1025
+ 0.9025 <= v[1,14] <= 1.1025
+ 0.9025 <= v[1,15] <= 1.1025
+ 0.9025 <= v[1,16] <= 1.1025
+ 0.9025 <= v[1,17] <= 1.1025
+ 0.9025 <= v[1,18] <= 1.1025
+ 0.9025 <= v[1,19] <= 1.1025
+ 0.9025 <= v[1,20] <= 1.1025
+ 0.9025 <= v[1,21] <= 1.1025
+ 0.9025 <= v[1,22] <= 1.1025
+ 0.9025 <= v[1,23] <= 1.1025
+ 0.9025 <= v[2,0] <= 1.1025
+ 0.9025 <= v[2,1] <= 1.1025
+ 0.9025 <= v[2,2] <= 1.1025
+ 0.9025 <= v[2,3] <= 1.1025
+ 0.9025 <= v[2,4] <= 1.1025
+ 0.9025 <= v[2,5] <= 1.1025
+ 0.9025 <= v[2,6] <= 1.1025
+ 0.9025 <= v[2,7] <= 1.1025
+ 0.9025 <= v[2,8] <= 1.1025
+ 0.9025 <= v[2,9] <= 1.1025
+ 0.9025 <= v[2,10] <= 1.1025
+ 0.9025 <= v[2,11] <= 1.1025
+ 0.9025 <= v[2,12] <= 1.1025
+ 0.9025 <= v[2,13] <= 1.1025
+ 0.9025 <= v[2,14] <= 1.1025
+ 0.9025 <= v[2,15] <= 1.1025
+ 0.9025 <= v[2,16] <= 1.1025
+ 0.9025 <= v[2,17] <= 1.1025
+ 0.9025 <= v[2,18] <= 1.1025
+ 0.9025 <= v[2,19] <= 1.1025
+ 0.9025 <= v[2,20] <= 1.1025
+ 0.9025 <= v[2,21] <= 1.1025
+ 0.9025 <= v[2,22] <= 1.1025
+ 0.9025 <= v[2,23] <= 1.1025
+ 0.9025 <= v[3,0] <= 1.1025
+ 0.9025 <= v[3,1] <= 1.1025
+ 0.9025 <= v[3,2] <= 1.1025
+ 0.9025 <= v[3,3] <= 1.1025
+ 0.9025 <= v[3,4] <= 1.1025
+ 0.9025 <= v[3,5] <= 1.1025
+ 0.9025 <= v[3,6] <= 1.1025
+ 0.9025 <= v[3,7] <= 1.1025
+ 0.9025 <= v[3,8] <= 1.1025
+ 0.9025 <= v[3,9] <= 1.1025
+ 0.9025 <= v[3,10] <= 1.1025
+ 0.9025 <= v[3,11] <= 1.1025
+ 0.9025 <= v[3,12] <= 1.1025
+ 0.9025 <= v[3,13] <= 1.1025
+ 0.9025 <= v[3,14] <= 1.1025
+ 0.9025 <= v[3,15] <= 1.1025
+ 0.9025 <= v[3,16] <= 1.1025
+ 0.9025 <= v[3,17] <= 1.1025
+ 0.9025 <= v[3,18] <= 1.1025
+ 0.9025 <= v[3,19] <= 1.1025
+ 0.9025 <= v[3,20] <= 1.1025
+ 0.9025 <= v[3,21] <= 1.1025
+ 0.9025 <= v[3,22] <= 1.1025
+ 0.9025 <= v[3,23] <= 1.1025
+ 0.9025 <= v[4,0] <= 1.1025
+ 0.9025 <= v[4,1] <= 1.1025
+ 0.9025 <= v[4,2] <= 1.1025
+ 0.9025 <= v[4,3] <= 1.1025
+ 0.9025 <= v[4,4] <= 1.1025
+ 0.9025 <= v[4,5] <= 1.1025
+ 0.9025 <= v[4,6] <= 1.1025
+ 0.9025 <= v[4,7] <= 1.1025
+ 0.9025 <= v[4,8] <= 1.1025
+ 0.9025 <= v[4,9] <= 1.1025
+ 0.9025 <= v[4,10] <= 1.1025
+ 0.9025 <= v[4,11] <= 1.1025
+ 0.9025 <= v[4,12] <= 1.1025
+ 0.9025 <= v[4,13] <= 1.1025
+ 0.9025 <= v[4,14] <= 1.1025
+ 0.9025 <= v[4,15] <= 1.1025
+ 0.9025 <= v[4,16] <= 1.1025
+ 0.9025 <= v[4,17] <= 1.1025
+ 0.9025 <= v[4,18] <= 1.1025
+ 0.9025 <= v[4,19] <= 1.1025
+ 0.9025 <= v[4,20] <= 1.1025
+ 0.9025 <= v[4,21] <= 1.1025
+ 0.9025 <= v[4,22] <= 1.1025
+ 0.9025 <= v[4,23] <= 1.1025
+ 0.9025 <= v[5,0] <= 1.1025
+ 0.9025 <= v[5,1] <= 1.1025
+ 0.9025 <= v[5,2] <= 1.1025
+ 0.9025 <= v[5,3] <= 1.1025
+ 0.9025 <= v[5,4] <= 1.1025
+ 0.9025 <= v[5,5] <= 1.1025
+ 0.9025 <= v[5,6] <= 1.1025
+ 0.9025 <= v[5,7] <= 1.1025
+ 0.9025 <= v[5,8] <= 1.1025
+ 0.9025 <= v[5,9] <= 1.1025
+ 0.9025 <= v[5,10] <= 1.1025
+ 0.9025 <= v[5,11] <= 1.1025
+ 0.9025 <= v[5,12] <= 1.1025
+ 0.9025 <= v[5,13] <= 1.1025
+ 0.9025 <= v[5,14] <= 1.1025
+ 0.9025 <= v[5,15] <= 1.1025
+ 0.9025 <= v[5,16] <= 1.1025
+ 0.9025 <= v[5,17] <= 1.1025
+ 0.9025 <= v[5,18] <= 1.1025
+ 0.9025 <= v[5,19] <= 1.1025
+ 0.9025 <= v[5,20] <= 1.1025
+ 0.9025 <= v[5,21] <= 1.1025
+ 0.9025 <= v[5,22] <= 1.1025
+ 0.9025 <= v[5,23] <= 1.1025
+ 0.9025 <= v[6,0] <= 1.1025
+ 0.9025 <= v[6,1] <= 1.1025
+ 0.9025 <= v[6,2] <= 1.1025
+ 0.9025 <= v[6,3] <= 1.1025
+ 0.9025 <= v[6,4] <= 1.1025
+ 0.9025 <= v[6,5] <= 1.1025
+ 0.9025 <= v[6,6] <= 1.1025
+ 0.9025 <= v[6,7] <= 1.1025
+ 0.9025 <= v[6,8] <= 1.1025
+ 0.9025 <= v[6,9] <= 1.1025
+ 0.9025 <= v[6,10] <= 1.1025
+ 0.9025 <= v[6,11] <= 1.1025
+ 0.9025 <= v[6,12] <= 1.1025
+ 0.9025 <= v[6,13] <= 1.1025
+ 0.9025 <= v[6,14] <= 1.1025
+ 0.9025 <= v[6,15] <= 1.1025
+ 0.9025 <= v[6,16] <= 1.1025
+ 0.9025 <= v[6,17] <= 1.1025
+ 0.9025 <= v[6,18] <= 1.1025
+ 0.9025 <= v[6,19] <= 1.1025
+ 0.9025 <= v[6,20] <= 1.1025
+ 0.9025 <= v[6,21] <= 1.1025
+ 0.9025 <= v[6,22] <= 1.1025
+ 0.9025 <= v[6,23] <= 1.1025
+ p_grid[0] <= 6
+ p_grid[1] <= 6
+ p_grid[2] <= 6
+ p_grid[3] <= 6
+ p_grid[4] <= 6
+ p_grid[5] <= 6
+ p_grid[6] <= 6
+ p_grid[7] <= 6
+ p_grid[8] <= 6
+ p_grid[9] <= 6
+ p_grid[10] <= 6
+ p_grid[11] <= 6
+ p_grid[12] <= 6
+ p_grid[13] <= 6
+ p_grid[14] <= 6
+ p_grid[15] <= 6
+ p_grid[16] <= 6
+ p_grid[17] <= 6
+ p_grid[18] <= 6
+ p_grid[19] <= 6
+ p_grid[20] <= 6
+ p_grid[21] <= 6
+ p_grid[22] <= 6
+ p_grid[23] <= 6
+ q_grid[0] <= 1.5
+ q_grid[1] <= 1.5
+ q_grid[2] <= 1.5
+ q_grid[3] <= 1.5
+ q_grid[4] <= 1.5
+ q_grid[5] <= 1.5
+ q_grid[6] <= 1.5
+ q_grid[7] <= 1.5
+ q_grid[8] <= 1.5
+ q_grid[9] <= 1.5
+ q_grid[10] <= 1.5
+ q_grid[11] <= 1.5
+ q_grid[12] <= 1.5
+ q_grid[13] <= 1.5
+ q_grid[14] <= 1.5
+ q_grid[15] <= 1.5
+ q_grid[16] <= 1.5
+ q_grid[17] <= 1.5
+ q_grid[18] <= 1.5
+ q_grid[19] <= 1.5
+ q_grid[20] <= 1.5
+ q_grid[21] <= 1.5
+ q_grid[22] <= 1.5
+ q_grid[23] <= 1.5
+ p_dg[0] <= 0.8
+ p_dg[1] <= 0.8
+ p_dg[2] <= 0.8
+ p_dg[3] <= 0.8
+ p_dg[4] <= 0.8
+ p_dg[5] <= 0.8
+ p_dg[6] <= 0.8
+ p_dg[7] <= 0.8
+ p_dg[8] <= 0.8
+ p_dg[9] <= 0.8
+ p_dg[10] <= 0.8
+ p_dg[11] <= 0.8
+ p_dg[12] <= 0.8
+ p_dg[13] <= 0.8
+ p_dg[14] <= 0.8
+ p_dg[15] <= 0.8
+ p_dg[16] <= 0.8
+ p_dg[17] <= 0.8
+ p_dg[18] <= 0.8
+ p_dg[19] <= 0.8
+ p_dg[20] <= 0.8
+ p_dg[21] <= 0.8
+ p_dg[22] <= 0.8
+ p_dg[23] <= 0.8
+ p_cap[3] <= 0.8
+ p_cap[4] <= 0.8
+ p_cap[5] <= 0.8
+ p_cap[6] <= 0.8
+ e_cap[3] <= 2.4
+ e_cap[4] <= 2.4
+ e_cap[5] <= 2.4
+ e_cap[6] <= 2.4
+Binaries
+ y_storage[3] y_storage[4] y_storage[5] y_storage[6]
+End

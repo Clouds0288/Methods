@@ -1,0 +1,97 @@
+
+Gurobi 13.0.2 (win64) logging started Fri May 22 17:18:04 2026
+
+Set parameter LogFile to value "D:\GithubProject\Methods\results\planning\gurobi_storage_misocp.log"
+Set parameter MIPGap to value 1e-09
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 10.0 (19045.2))
+
+CPU model: Intel(R) Core(TM) i7-14700KF, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 28 logical processors, using up to 28 threads
+
+Non-default parameters:
+MIPGap  1e-09
+LogToConsole  0
+
+Academic license 2685996 - for non-commercial use only - registered to 20___@mail.scut.edu.cn
+Optimize a model with 1021 rows, 876 columns and 3076 nonzeros (Min)
+Model fingerprint: 0x787a7cb9
+Model has 252 linear objective coefficients
+Model has 240 quadratic constraints
+Variable types: 872 continuous, 4 integer (4 binary)
+Coefficient statistics:
+  Matrix range     [4e-04, 2e+00]
+  QMatrix range    [1e+00, 1e+02]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [8e-01, 6e+00]
+  RHS range        [5e-02, 1e+00]
+  QRHS range       [9e+00, 4e+01]
+
+Presolve removed 108 rows and 100 columns
+Presolve time: 0.01s
+Presolved: 913 rows, 776 columns, 2788 nonzeros
+Presolved model has 144 quadratic constraint(s)
+Variable types: 772 continuous, 4 integer (4 binary)
+Root relaxation presolve time: 0.02s
+Root relaxation presolved: 1249 rows, 1088 columns, 3604 nonzeros
+Root relaxation presolved model has 144 second-order cone constraints
+Root barrier log...
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.932e+04
+ Factor NZ  : 7.438e+04 (roughly 2 MB of memory)
+ Factor Ops : 9.943e+06 (less than 1 second per iteration)
+ Threads    : 20
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.03917820e+04 -3.72974467e+04  3.11e+01 3.12e+01  1.55e+02     0s
+   1   1.41859067e+04 -2.79196569e+04  1.80e+01 6.07e+01  8.08e+01     0s
+   2   7.03517583e+03 -1.26410348e+04  4.32e+00 1.11e+01  2.12e+01     0s
+   3   6.06140033e+03 -2.02824631e+03  2.02e+00 1.28e+00  7.60e+00     0s
+   4   5.08009779e+03  3.01903063e+03  1.94e-01 8.58e-02  1.18e+00     0s
+   5   4.88362780e+03  4.58204445e+03  3.82e-02 4.89e-03  1.48e-01     0s
+   6   4.83000664e+03  4.74420105e+03  1.38e-02 8.81e-04  3.96e-02     0s
+   7   4.81381676e+03  4.76718241e+03  9.08e-03 3.06e-04  2.12e-02     0s
+   8   4.79978119e+03  4.78576674e+03  3.79e-03 3.95e-05  6.31e-03     0s
+   9   4.79471306e+03  4.78818016e+03  1.74e-03 1.63e-05  2.92e-03     0s
+  10   4.79262222e+03  4.78939041e+03  9.19e-04 5.79e-06  1.44e-03     0s
+  11   4.79168413e+03  4.78980450e+03  5.41e-04 2.84e-06  8.34e-04     0s
+  12   4.79113016e+03  4.79003912e+03  3.17e-04 1.30e-06  4.83e-04     0s
+  13   4.79070960e+03  4.79018663e+03  1.46e-04 4.71e-07  2.31e-04     0s
+  14   4.79056949e+03  4.79026828e+03  9.17e-05 1.28e-07  1.33e-04     0s
+  15   4.79048199e+03  4.79029317e+03  5.63e-05 6.20e-08  8.33e-05     0s
+  16   4.79040598e+03  4.79031216e+03  2.61e-05 2.43e-08  4.13e-05     0s
+  17   4.79039059e+03  4.79032646e+03  2.02e-05 5.67e-09  2.82e-05     0s
+  18   4.79036399e+03  4.79033121e+03  1.00e-05 1.96e-09  1.44e-05     0s
+  19   4.79035258e+03  4.79033369e+03  5.86e-06 9.53e-10  8.29e-06     0s
+  20   4.79034538e+03  4.79033529e+03  3.25e-06 2.22e-09  4.43e-06     0s
+  21   4.79034187e+03  4.79033583e+03  2.00e-06 3.69e-09  2.65e-06     0s
+  22   4.79033931e+03  4.79033593e+03  1.10e-06 7.29e-09  1.48e-06     0s
+
+Barrier solved model in 22 iterations and 0.08 seconds (0.03 work units)
+Optimal objective 4.79033931e+03
+
+
+Root relaxation: objective 4.790339e+03, 0 iterations, 0.06 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4790.33931    0    4          - 4790.33931      -     -    0s
+     0     0 4790.33931    0    4          - 4790.33931      -     -    0s
+     0     0 4790.33931    0    4          - 4790.33931      -     -    0s
+H    0     0                    4790.3445213 4790.33931  0.00%     -    0s
+H    0     0                    4790.3444244 4790.33931  0.00%     -    0s
+H    0     0                    4790.3443854 4790.33931  0.00%     -    0s
+     0     2 4790.33931    0    4 4790.34439 4790.33931  0.00%     -    0s
+
+Explored 3 nodes (0 simplex iterations) in 0.32 seconds (0.28 work units)
+Thread count was 28 (of 28 available processors)
+
+Solution count 1: 4790.34 
+No other solutions better than 4790.34
+
+Optimal solution found (tolerance 1.00e-09)
+Best objective 4.790344383459e+03, best bound 4.790344383459e+03, gap 0.0000%

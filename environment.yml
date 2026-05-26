@@ -1,0 +1,14 @@
+name: methods
+channels:
+  - defaults
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - gurobipy
+      - cvxpy
+      - matplotlib
+      - numpy
+      - openpyxl
+      - pandas
+      - scs
